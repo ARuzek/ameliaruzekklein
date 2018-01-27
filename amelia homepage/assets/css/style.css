@@ -1,0 +1,182 @@
+/* DOCUMENTATION: Set up a base style */
+
+html { 
+  -webkit-font-smoothing: antialiased; 
+} 
+ 
+* { 
+  box-sizing: border-box; 
+} 
+ 
+nav > ul { 
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+} 
+
+a {
+    color: black;
+    text-decoration: none;
+    padding: .5em .5em .5em 0em;
+    transition: 1s;
+}
+
+a:hover {
+    background-color: #ece2de;
+    transition: 1s;
+    padding: .5em .5em .5em .5em;
+}
+ 
+body { 
+  min-height: 100vh; 
+  margin: 0; 
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+} 
+ 
+.is-hidden { 
+  display: none !important; 
+} 
+
+
+/* DOCUMENTATION: Set up a layout */
+
+article , header , main{
+    display: grid;
+}
+
+img:not(.icon), video {
+    float: right;
+    width: 70%;
+    margin: 1em 5em;
+    padding: 3em;
+}
+
+h1 {
+    padding-top: 0em;
+    font-size: 300%;
+}
+
+main > h3 {
+    float: left;
+    margin-left: calc(30% - 4.4em);
+    margin-top: 2em;
+}
+
+header .portfolio-copy {
+    position: absolute;
+    margin-top: 5em;
+    margin-left: 5em;
+    width: 50%
+}
+
+.portfolio-copy {
+    position: absolute;
+    margin-top: 5em;
+    margin-left: 5em;
+    width: 20%
+}
+
+.portfolio-copy h1 , .portfolio-copy h2 , .portfolio-copy h3 , .portfolio-copy a  {
+    grid-row: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    background-color: #f2f2f2;
+}
+
+footer > a {
+    margin-left: 5em;
+}
+
+footer div {
+    display: flex;
+}
+
+footer .icon {
+    justify-content: center;
+    margin-left: 0;
+}
+
+/* DOCUMENTATION: Set up a layout for mobile */
+
+@media only screen and (max-width: 900px) {
+    
+    img:not(.icon), video {
+    float: none;
+    width: 100%;
+    margin: 0;
+    padding: 3em;
+    }
+    
+    main > h3 {
+    float: left;
+    text-align: center;
+    margin-left: 0;
+    margin-top: 2em;
+    display: none;
+    }
+    
+   header .portfolio-copy {
+    position: relative;
+    margin: 1em 0;
+    padding-left: 1em;
+    width: 100%
+    }
+
+    .portfolio-copy {
+    position: relative;
+    margin: 1em 0;
+    text-align: center;
+    width: 100%;
+    padding: 0 1em;
+    } 
+    
+    footer > a {
+        margin-left: 1em;
+        }
+
+    footer > p {
+        text-align: center;   
+        }
+}
+
+
+/* DOCUMENTATION: Set up components */
+
+header h3 {
+    color: #6a9996;
+}
+
+.icon {
+    width: 3em;
+    
+}
+
+img[alt="Design Process Sketches"]{
+    background-color: #f2f2f2;
+}
+
+img[alt="Eastbay Style Guide"]{
+    background-color: #d9d9d9;
+}
+
+img[alt="Meal Planning Website"]{
+    background-color: #e6fff4;
+}
+
+img[alt="Virtual Flower Garden"] , video[alt="Virtual Flower Garden"]{
+    background-color: #f2f2f2;
+}
+
+img[alt="Sneaker Release Calendar Application"]{
+    background-color: #afbdc7;
+}
+
+img[alt="No Man's Sky Fan Site"]{
+    background-color: #ece2de;
+}
+
