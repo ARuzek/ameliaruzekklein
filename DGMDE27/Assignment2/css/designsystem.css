@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+/* Changing to a box border system allows for much easier measurements */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Setting the viewport height to 100% explicitly is recommended by csstricks to make sure that every page will fill up your device and not look awkward. */
+body {
+  min-height: 100vh;
+  max-width: 100%;
+  margin: auto;
+  /* Setting the background to a beautiful neutral*/
+  background-color: #f7ecea;
+  font-family: "Quattrocento Sans", sans-serif;
+}
+
+/* Setting the fonts since these are going to remain constant and consistent */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: 700;
+  margin: 0.5rem 0rem;
+  color: #0e1f22;
+}
+
+p, a {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: 400;
+  margin: 0.5rem 0rem;
+}
+
+/* This typography system is based on a lot of web design articles I read about vertical rhythm. If you use multiples of the same size, all your type will line up as if your writing in a lined notebook. I chose my base value to be .5rem. */
+h1 {
+  font-size: 4rem;
+  line-height: 6rem;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+h5, p, a, pre {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+h6 {
+  font-size: 0.5rem;
+  line-height: 1rem;
+}
+
+pre {
+  font-family: 'Source Code Pro', monospace;
+  background-color: #f7ecea;
+}
+
+@media (max-width: 39em) {
+  /* The large sizes of font shift down when viewed on mobile */
+  h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+/****************************
+     CSS Custom Properties
+    ****************************/
+:root {
+  /* passing SASS into this css var because SASS cannot be placed within the calc in the css var, it will compile as if it's a string with a $ and everything. */
+  --standard-space: 1rem;
+  --one-column: 0 0 calc(100% - calc( var(--standard-space) * 2));
+  --two-column: 0 0 calc(100% - calc( var(--standard-space) * 2));
+  --three-column: 0 0 calc(100% - calc( var(--standard-space) * 2));
+  --four-column: 0 0 calc(100% - calc( var(--standard-space) * 2));
+  --five-column: 0 0 calc(100% - calc( var(--standard-space) * 2));
+  --six-column: 0 0 calc(100% - calc( var(--standard-space) * 2));
+}
+
+/**************************
+    GRID SYSTEM
+    **************************/
+.row {
+  display: flex;
+}
+
+/* example of an extend */
+.one-column, .two-column, .three-column, .four-column, .five-column, .six-column {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.one-column {
+  flex: var(--one-column);
+}
+
+.two-column {
+  flex: var(--two-column);
+}
+
+.three-column {
+  flex: var(--three-column);
+}
+
+.four-column {
+  flex: var(--four-column);
+}
+
+.five-column {
+  flex: var(--five-column);
+}
+
+.six-column {
+  flex: var(--six-column);
+}
+
+/*************************
+    NAVIGATIONAL LAYOUT
+    *************************/
+/* Example of nesting. I'm setting the nav to flex because it's the easiest way I know how to align the base of the logo and the links */
+nav {
+  display: flex;
+  align-items: baseline;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  padding-left: 1rem;
+}
+
+/**************************
+    HEADER LAYOUT
+    **************************/
+header.spotlight {
+  padding: 5rem 1rem;
+  width: 100%;
+  text-align: center;
+  background-color: #0e1f22;
+  background-size: cover;
+}
+
+/**************************
+    BIO LAYOUT
+    **************************/
+.personal-bio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/******************************** MEDIA QUERY **************************************/
+/***********************************************************************************/
+@media (max-width: 39em) {
+  .row {
+    display: block;
+  }
+  .one-column, .two-column, .three-column, .four-column, .five-column, .six-column {
+    width: var(--six-column);
+    margin-left: 0rem;
+  }
+  nav {
+    display: block;
+    text-align: center;
+  }
+  nav > ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  .personal-bio {
+    display: block;
+  }
+}
+
+/******************************** MEDIA QUERY **************************************/
+/***********************************************************************************/
+@media (min-width: 40em) and (max-width: 59em) {
+  /**************************
+    GRID SYSTEM
+    **************************/
+  :root {
+    --standard-space: 1rem;
+    --one-column: 0 0 calc((100% - calc( var(--standard-space) * 7)) / 6);
+    --two-column: 0 0 calc((100% - calc( var(--standard-space) * 4)) / 3);
+    --three-column: 0 0 calc((100% - calc( var(--standard-space) * 3)) / 2);
+    --four-column: 0 0 calc(((100% - calc( var(--standard-space) * 4)) / 3) * 2 + 1em);
+    --five-column: 0 0 calc(((100% - calc( var(--standard-space) * 3)) / 2) + ((100% - calc( var(--standard-space) * 4)) / 3) + var(--standard-space));
+    --six-column: 0 0 calc(100% - calc( var(--standard-space) * 2));
+  }
+  /**************************
+    HEADER LAYOUT
+    **************************/
+  header.spotlight {
+    padding: 10rem 1rem;
+    background-color: #0e1f22;
+  }
+}
+
+/******************************** MEDIA QUERY **************************************/
+/***********************************************************************************/
+@media (min-width: 60em) {
+  /**************************
+    GRID SYSTEM
+    **************************/
+  :root {
+    --standard-space: 1rem;
+    --one-column: 0 0 calc((100% - calc( var(--standard-space) * 7)) / 6);
+    --two-column: 0 0 calc((100% - calc( var(--standard-space) * 4)) / 3);
+    --three-column: 0 0 calc((100% - calc( var(--standard-space) * 3)) / 2);
+    --four-column: 0 0 calc(((100% - calc( var(--standard-space) * 4)) / 3) * 2 + 1em);
+    --five-column: 0 0 calc(((100% - calc( var(--standard-space) * 3)) / 2) + ((100% - calc( var(--standard-space) * 4)) / 3) + var(--standard-space));
+    --six-column: 0 0 calc(100% - calc( var(--standard-space) * 2));
+  }
+  /**************************
+    HEADER LAYOUT
+    **************************/
+  header.spotlight {
+    padding: 10rem 1rem;
+    background-color: #0e1f22;
+    width: 100%;
+  }
+}
+
+a {
+  color: #0e1f22;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.example div {
+  background-color: #efdcd8;
+  font-size: 1rem;
+  padding: 1rem 0rem;
+  text-align: center;
+}
+
+.logo {
+  color: #4193a1;
+  padding-left: 1rem;
+}
+
+nav * {
+  margin: 1rem 0rem;
+}
+
+pre {
+  display: inline;
+}
+
+.personal-bio picture img {
+  border-radius: 100%;
+}
+
+.side-navigation, .content {
+  background-color: #f7ecea;
+}
+
+.side-navigation {
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.side-navigation li {
+  padding-bottom: 1rem;
+  padding-top: 0rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0rem;
+  margin: 0rem;
+}
+
+.warning-notification {
+  background-color: #1c4046;
+  color: #f7ecea;
+}
+
+@media (min-width: 40em) {
+  .warning-notification {
+    display: none;
+  }
+}
+
+#iamhere {
+  text-decoration: underline;
+}
+
+/* COLOR DEFINITIONS */
+.button-primary {
+  padding: 1rem;
+  color: #f7ecea;
+  background-color: #4193a1;
+}
+
+.button-secondary {
+  padding: 1rem;
+  color: #0e1f22;
+  background-color: #efdcd8;
+}
+
+.primary-color {
+  background-color: #4193a1;
+}
+
+.secondary-color {
+  background-color: #a14f41;
+}
+
+.light-color {
+  background-color: #f7ecea;
+}
+
+.medium-light-color {
+  background-color: #efdcd8;
+}
+
+.medium-color {
+  background-color: #1c4046;
+}
+
+.medium-dark-color {
+  background-color: #152f34;
+}
+
+.dark-color {
+  background-color: #0e1f22;
+}
+
+h1.primary-color, h2.primary-color, h3.primary-color, h4.primary-color, h5.primary-color, h6.primary-color, p.primary-color, pre.primary-color {
+  color: #4193a1;
+  background-color: transparent;
+}
+
+h1.secondary-color, h2.secondary-color, h3.secondary-color, h4.secondary-color, h5.secondary-color, h6.secondary-color, p.secondary-color, pre.secondary-color {
+  color: #a14f41;
+  background-color: transparent;
+}
+
+h1.light-color, h2.light-color, h3.light-color, h4.light-color, h5.light-color, h6.light-color, p.light-color, pre.light-color {
+  color: #f7ecea;
+  background-color: transparent;
+}
+
+h1.medium-light-color, h2.medium-light-color, h3.medium-light-color, h4.medium-light-color, h5.medium-light-color, h6.medium-light-color, p.medium-light-color, pre.medium-light-color {
+  color: #efdcd8;
+  background-color: transparent;
+}
+
+h1.medium-color, h2.medium-color, h3.medium-color, h4.medium-color, h5.medium-color, h6.medium-color, p.medium-color, pre.medium-color {
+  color: #1c4046;
+  background-color: transparent;
+}
+
+h1.medium-dark-color, h2.medium-dark-color, h3.medium-dark-color, h4.medium-dark-color, h5.medium-dark-color, h6.medium-dark-color, p.medium-dark-color, pre.medium-dark-color {
+  color: #152f34;
+  background-color: transparent;
+}
+
+h1.dark-color, h2.dark-color, h3.dark-color, h4.dark-color, h5.dark-color, h6.dark-color, p.dark-color, pre.dark-color {
+  color: #0e1f22;
+  background-color: transparent;
+}

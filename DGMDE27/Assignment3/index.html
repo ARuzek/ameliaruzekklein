@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--AMELIA RUZEK-->
+<!--DGMDE27 ASSIGNMENT 3-->
+<!--Full Disclosure Note: I used this assignment as an opportunity to update one of my personal webpages (ameliaruzek.com). While similar in content, I've updated all the copywriting, images, and have completely implemented 100% new markup & styling. -->
+<!--DOES NOT VALIDATE BECAUSE OF UIKIT ATTRIBUTES-->
+<html>
+    <head>
+        <title>Amelia Ruzek</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+    </head>
+    <body>
+
+          <!--
+          NAVIGATION
+          ------------------------------------------------------------------->
+          <header class="uk-hidden@s uk-flex uk-flex-center uk-flex-middle">
+            <a href="/">
+              <img src="images/Logo.png" alt="Amelia Ruzek Logo. Click for Homepage."/>
+            </a>
+            <div role="navigation" class="uk-navbar-toggle uk-navbar-right" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav"></div>
+          </header>
+          <nav class="uk-navbar-container uk-visible@s" uk-navbar>
+            <div class="uk-navbar-left" uk-scrollspy="cls:uk-animation-fade">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-parent">
+                      <a href="/">
+                        <img src="images/Logo.png" alt="Amelia Ruzek Logo. Click for Homepage."/>
+                      </a>
+                    </li>
+                    <li class="uk-parent"><a href="#pastwork" uk-scroll>Past Work</a></li>
+                    <li class="uk-parent"><a href="#services" uk-scroll>Services</a></li>
+                    <li class="uk-parent"><a href="#about" uk-scroll>About</a></li>
+                    <li class="uk-parent"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+          </nav>
+        
+          <!--
+          OFF CANVAS NAVIGATION
+          --------------------------------------------------------------------->
+          <div class="uk-offcanvas-content">
+            <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+              <div class="uk-offcanvas-bar">
+                <ul class="uk-nav uk-nav-default">
+                    <li class="uk-active"><a href="">Amelia Ruzek</a></li>
+                    <li class="uk-parent"><a href="#pastwork" uk-scroll>Past Work</a></li>
+                    <li class="uk-parent"><a href="#services" uk-scroll>Services</a></li>
+                    <li class="uk-parent"><a href="#about" uk-scroll>About</a></li>
+                    <li class="uk-parent"><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!--
+          HELLO SECTION
+          ------------------------------------------------------------------->
+
+              <!--<div class="uk-section uk-background-cover uk-background-blend-darken" style="background-image: url(images/dustin-lee-19667-unsplash.jpg)"> -->
+              <div class="uk-section uk-background-cover uk-background-secondary">
+                  <div class="uk-text-center" uk-scrollspy="cls:uk-animation-slide-bottom-small">
+                      <h1 class="uk-heading-primary  ">Get help with the web development and graphic design needed to build your goals.</h1>
+                      <a href="contact.html"><button class="uk-button uk-button-primary">Get a Quote</button></a>
+                  </div>
+              </div>
+
+          <!--
+          WORK LIGHTBOX
+          ------------------------------------------------------------------->
+          <main class="uk-container">
+            <hr />
+            <div class="uk-h2 uk-text-center" uk-scrollspy="cls:uk-animation-fade">
+              <h2 id="pastwork">Past Work</h2>
+            </div>
+            <ul uk-tab>
+                <li><a href="#">Web Design</a></li>
+                <li><a href="#">Graphic Design</a></li>
+            </ul>
+            <section class="uk-switcher">
+                <div class="uk-child-width-1-3@m" uk-grid uk-lightbox="animation: fade">
+                    <div uk-scrollspy="cls:uk-animation-fade">
+                        <a class="uk-inline" href="images/DesignSystem-PresentationRegular.jpg" caption="a website design for a framework">
+                            <img src="images/DesignSystem-PresentationSmall.jpg" alt="a website design for a framework">
+                        </a>
+                    </div>
+                    <div uk-scrollspy="cls:uk-animation-fade">
+                        <a class="uk-inline" href="images/Foodie-PresentationRegular.jpg" caption="a website design for a food service">
+                            <img src="images/Foodie-PresentationSmall.jpg" alt="a website design for a food service">
+                        </a>
+                    </div>
+                    <div uk-scrollspy="cls:uk-animation-fade">
+                        <a class="uk-inline" href="images/FantasticPlants-PresentationRegular.jpg" caption="a website design for a gaming fan site">
+                            <img src="images/FantasticPlants-PresentationSmall.jpg" alt="a website design for a gaming fan site">
+                        </a>
+                    </div>
+                </div>
+                <div class="uk-child-width-1-3@m" uk-grid uk-lightbox="animation: fade">
+                    <div uk-scrollspy="cls:uk-animation-fade">
+                        <a class="uk-inline" href="images/Hitch-PresentationRegular.jpg" caption="logo design for a coffee company">
+                            <img src="images/Hitch-PresentationSmall.jpg" alt="logo design for a coffee company">
+                        </a>
+                    </div>
+                    <div uk-scrollspy="cls:uk-animation-fade">
+                        <a class="uk-inline" href="images/ITConference-PresentationRegular.jpg" caption="logo design for a conference">
+                            <img src="images/ITConference-PresentationSmall.jpg" alt="logo design for a conference">
+                        </a>
+                    </div>
+                    <div uk-scrollspy="cls:uk-animation-fade">
+                        <a class="uk-inline" href="images/Graphic-PresentationRegular.jpg" caption="graphic design with special effects">
+                            <img src="images/Graphic-PresentationSmal.jpg" alt="graphic design with special effects">
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--
+            ABOUT SECTION
+            ------------------------------------------------------------------->
+            <section class="uk-section">
+              <div class="uk-text-center " uk-scrollspy="cls:uk-animation-fade">
+                <h2 id="about">About Me</h2>
+                <p> Hi, I'm Amelia and I'm a digital media designer. I can create across multiple mediums and technologies including augmented reality, virtual reality, animation, the web, and plain jane graphic design. Get help with your project's logo, advertisements, or website development. I've worked with both fortune 500 and startups, and I'd love to help you too. Ready to get started?</p>
+                <a href="contact.html"><button class="uk-button uk-button-primary"> Contact Me </button></a>
+              </div>
+            </section>
+
+          <!--
+          SERVICES CARDS
+          ------------------------------------------------------------------->
+            <div class="uk-h2 uk-text-center" uk-scrollspy="cls:uk-animation-fade">
+              <h2 id="services">Services</h2>
+            </div>
+            <div class="uk-child-width-1-2@s uk-grid-match uk-grid-divider" uk-grid >
+                  <div>
+                      <div class="uk-card  uk-card-body uk-text-center" uk-scrollspy="cls:uk-animation-fade">
+                          <span uk-icon="icon: image; ratio: 3"></span>
+                          <h3 class="uk-card-title">Graphic Design</h3>
+                          <p>Need a logo, newsletter, or an invitation designed? Contact me with more information about the project and I can provide a pricing estimate. Typically graphic design projects will include sketches, mockups, revisions, a finished product with multiple file extensions, and professional advice or options for print and digital use.</p>
+                      </div>
+                  </div>
+                  <div>
+                      <div class="uk-card  uk-card-body uk-text-center" uk-scrollspy="cls:uk-animation-fade">
+                          <span uk-icon="icon: laptop; ratio: 3"></span>
+                          <h3 class="uk-card-title">Websites</h3>
+                          <p>There are about a thousand ways to make a website these days, and it can be really hard to choose the right service that fits your needs and budget. Depending on your use case, certain platforms and pre-built services might be a better fit than something made from scratch. Let me help you remove the guesswork. Contact me with more information about your project and I can provide a pricing estimate.</p>
+                      </div>
+                  </div>
+            </div>
+        </main>
+        <footer class="uk-background-cover uk-background-secondary">
+            <p class="uk-text-center">Made by Amelia Ruzek using UIKit</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,93 @@
+/* Amelia Ruzek */
+/* DGMD E20     */
+/* Assignment 1 */
+/* 09 22 2017   */
+
+/*Set all headings to a serif font, italic, and any color but black. The other elements of the document should be a sans-serif font, within a second declaration block. (Be sure to mention a system typeface as well as the generic.)
+*/
+
+body {
+    font-family: arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: georgia, serif;
+    font-style: italic;
+    color: cadetblue;
+}
+
+/*Within the first paragraph after First Heading (starts “lorem ipsum), make the second emphasized text display in bold and green (but not the first!) on line 37. Do not use an nth-child or nth-of-type selector.
+*/
+
+main p:first-of-type em:last-of-type {
+    font-weight: bold;
+    color: green;
+}
+
+/*For all links that go offsite, indicate them as such with this icon: http://upload.wikimedia.org/wikipedia/commons/6/64/Icon_External_Link.png 
+*/
+
+a[href*="http"]{
+    padding-right: 20px;
+    background: url(http://upload.wikimedia.org/wikipedia/commons/6/64/Icon_External_Link.png) no-repeat right;
+}
+
+/*For the navbar elements that go offsite, do not display the above icon. However, keep the icon for all other links in other locations on the page, so #3 continues to work.
+*/
+
+nav a[href*="http"] {
+    padding-right: 0px;
+    background-image: none;
+}
+
+/*Indicate PDF links by placing the text string (PDF) after each relevant link.
+*/
+
+a[href*=".pdf"]::after{
+    content: " (PDF)"
+}
+
+/*For all of the table cells, provide a small amount of space between the words and their container. In a second declaration, create a pink box with two lines going around the entire table.
+*/
+
+table td {
+    padding: 5px;
+}
+
+table {
+    border-style: double;
+    border-color: pink;
+}
+
+/*For the “Temperature”, “Precipitation”, “Amount of Daylight” and “Recommended Outerwear” headings in the table, but NOT the month headings, make them uppercase, orange, and left-aligned. Do not use an nth-child or nth-of-type selector.
+*/
+
+th:first-child {
+    text-transform: uppercase;
+    color: orange;
+    text-align: left;
+}
+
+/*In the table, stripe the table so every other row has alternating colors.
+*/
+
+tr:nth-of-type(even){
+    background-color: paleturquoise;
+}
+
+/*Make the words “Jen Kramer” in the 3rd blockquote (line 36) white, with a purple background color, and not italic. Make use of the :not selector.
+*/
+
+blockquote:last-child :not(p){
+    background-color: purple;
+    color: white;
+    font-style: normal;
+}
+
+/*Make an orange line to separate the footer from the rest of the web page. Center the text in the footer.
+*/
+footer{
+    border-top: thick solid orange;
+    text-align: center;
+}
+

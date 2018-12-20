@@ -1,0 +1,239 @@
+/**************************
+    FONT SYSTEM
+**************************/
+
+        /* Setting the fonts since these are going to remain constant and consistent */
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: $header-font;
+            font-weight: 700;
+            margin: $small-space $no-space;
+            color: $dark-color;
+        }
+
+        p, a, input, figcaption, label {
+            font-family: $paragraph-font;
+            font-weight: 400;
+            margin: $small-space $no-space;
+            color: $dark-color;
+        }
+
+        a {
+            color: $medium-color;
+        }
+
+        pre {
+            font-family: 'Source Code Pro', monospace;
+            display: inline;
+            
+            /* THANK YOU to https://css-tricks.com/snippets/css/make-pre-text-wrap/ for this snippet of styling */
+             white-space: pre-wrap;       /* css-3 */
+             white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+             white-space: -pre-wrap;      /* Opera 4-6 */
+             white-space: -o-pre-wrap;    /* Opera 7 */
+             word-wrap: break-word;       /* Internet Explorer 5.5+ */
+        }
+
+        /* This typography system is based on a lot of web design articles I read about vertical rhythm. If you use multiples of the same size, all your type will line up as if your writing in a lined notebook. I chose my base value to be .5rem. */
+
+        h1 {
+            font-size: $font-size-xxl;
+            line-height: calc($font-size-xxl + $font-size-s);
+        }
+
+        h2 {
+            font-size: $font-size-xl;
+            line-height: calc($font-size-xl + $font-size-xs) ;
+        }
+
+        h3 {
+            font-size: $font-size-l;
+            line-height: $font-size-xl;
+        }
+
+        h4 {
+            font-size: $font-size-m;
+            line-height: $font-size-l;
+        }
+
+        h5, p, a, pre, label, input, figcaption {
+            font-size: $font-size-s;
+            line-height: $font-size-m;
+        }
+
+        h6 {
+            font-size: $font-size-xs;
+            line-height: $font-size-s;
+        }
+
+       
+
+        @media (max-width: 39em) {
+
+            /* The large sizes of font shift down when viewed on mobile */
+
+            h1 {
+                font-size: $font-size-l;
+                line-height: $font-size-xl;
+            }
+
+            h2 {
+                font-size: $font-size-l;
+                line-height: $font-size-xl;
+            }
+
+            h3 {
+                font-size: $font-size-m;
+                line-height: $font-size-l;
+            }
+
+
+        }
+
+/**************************
+    COLOR SYSTEM
+**************************/
+
+        .primary-color {
+            background-color: $accent-color;
+        }
+
+        .secondary-color  {
+            background-color: $complementary-color;
+        }
+
+        .light-color {
+            background-color: $light-color;
+        }
+
+        .medium-light-color {
+            background-color: $medium-light-color;
+        }
+
+        .medium-color {
+            background-color: $medium-color;
+        }
+
+        .dark-color {
+            background-color: $dark-color;
+        }
+
+        h1.primary-color , h2.primary-color , h3.primary-color, h4.primary-color , h5.primary-color , h6.primary-color , p.primary-color , pre.primary-color , a.primary-color , label.primary-color{
+            color: $accent-color;
+            background-color: transparent;
+        }
+
+        h1.secondary-color , h2.secondary-color , h3.secondary-color, h4.secondary-color , h5.secondary-color , h6.secondary-color , p.secondary-color , pre.secondary-color , a.secondary-color , label.secondary-color {
+            color: $complementary-color;
+            background-color: transparent;
+        }
+
+        h1.light-color , h2.light-color , h3.light-color, h4.light-color , h5.light-color , h6.light-color , p.light-color , pre.light-color , a.light-color , label.light-color {
+            color: $light-color;
+            background-color: transparent;
+        }
+
+        h1.medium-light-color , h2.medium-light-color , h3.medium-light-color, h4.medium-light-color , h5.medium-light-color , h6.medium-light-color , p.medium-light-color , pre.medium-light-color , a.medium-light-color , label.medium-light-color {
+            color: $medium-light-color;
+            background-color: transparent;
+        }
+
+        h1.medium-color , h2.medium-color , h3.medium-color, h4.medium-color , h5.medium-color , h6.medium-color , p.medium-color , pre.medium-color , a.medium-color , label.medium-color{
+            color: $medium-color;
+            background-color: transparent;
+        }
+
+        h1.dark-color , h2.dark-color , h3.dark-color, h4.dark-color , h5.dark-color , h6.dark-color , p.dark-color , pre.dark-color , a.dark-color , label.dark-color {
+            color: $dark-color;
+            background-color: transparent;
+        }
+
+        // ALTERNATIVE TEXT STYLES
+
+        .center{
+            text-align: center;
+        }
+
+        .wide-letter-spacing{
+            letter-spacing: 1em;
+        }
+
+        .center.wide-letter-spacing{
+            text-indent: 1em;
+        }
+
+
+/**************************
+    LINK SYSTEM
+**************************/
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .hover-effect:hover , .hover-effect:active {
+            filter: drop-shadow(0px 0.2em 0.2em rgba(0,0,0,0.25));
+            transform: translateY(-0.1em);
+            transition: transform .5s linear, filter .5s linear;
+        }
+
+/**************************
+    BUTTON SYSTEM
+**************************/
+
+        .button-primary{
+            @include makeButton(primary);
+        }
+
+        .button-secondary{
+            @include makeButton(secondary);
+        }
+
+/**************************
+    FORM SYSTEM
+**************************/
+
+        input {
+
+            padding: $standard-space;
+            border: 1px solid $dark-color;
+            margin-top: $standard-space;
+            width: 100%;
+            background-color: transparent;
+        }
+
+        input.light-color {
+            border-color: $light-color;
+        }
+
+        input[type=text]:focus {
+            background-color: $medium-light-color;
+        }
+
+/**************************
+    CONTAINER SYSTEM
+**************************/
+
+        .circular {
+            border-radius: 100%;
+        }
+
+        .rounded {
+            border-radius: .5em;
+        }
+
+        section {
+            padding: $standard-space 0 $standard-space 0;
+        }
+
+        img {
+            width: 100%;
+        }
+
+
+
+

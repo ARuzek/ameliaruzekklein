@@ -1,0 +1,210 @@
+/*Amelia Ruzek | DGMDE20 | Assignment4*/
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+aside {
+ 
+    display: grid;
+    text-align: center;
+    grid-template-columns: 3fr 1fr;
+    
+    /* This reorders the grid so that the aside is on top */
+    grid-row-start: 1;
+    
+    background-color: mediumaquamarine;
+    color: black;
+    width: 100%;
+    z-index: 1;
+    
+    animation-name: popOuttaNowhere;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+ 
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    margin: 0;
+}
+
+button {
+    margin: .5em 3em;
+    padding: 1em;
+    background-color: darkslategrey;
+    color: WHITE;
+    border: none;
+    font-size: .75em;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px rgba(0,0,0,.35);
+
+
+}
+
+button:hover {
+    animation-name: annoyingButton;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+}
+
+footer {
+    display: grid;
+    background-color: darkslategray;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 20px; 
+    margin-top: 20px;
+    
+}
+
+footer li {
+    margin-bottom: 1em;
+}
+
+h1, h2, h3, h4, h5, h6, .logo {
+    font-family: 'Spectral SC', serif;
+}
+
+header {
+    background-color: white;
+}
+
+img{
+    width: 100%;
+}
+
+img[alt *= "Marker"]{
+    width: 3em;
+    height: 3em;
+}
+
+img[alt *= "Marker 1"]{
+    position: relative;
+    left: 25%;
+    margin-top: 170%;
+}
+
+img[alt *= "Marker 2"]{
+    position: relative;
+    left: 15%;
+    margin-top: 100%;
+}
+
+img[alt *= "Marker 3"]{
+    position: relative;
+    left: 5%;
+    margin-top: 20%;
+}
+
+img[alt *= "Marker 4"]{
+    position: relative;
+    left: 0%;
+    margin-top: 130%;
+}
+
+img[alt *= "Marker 5"]{
+   position: relative;
+    left: 0%;
+    margin-top: 170%;
+}
+
+@keyframes annoyingButton {
+    from {
+        transform: scale(1);
+    }
+    
+    to {
+        transform: scale(1.04);
+    }
+}
+
+@keyframes popOuttaNowhere {
+    from {
+        
+        opacity: 0;
+
+    }
+    
+    to {
+        opacity: 1;
+        
+    }
+}
+
+main section {
+    /* This is the nested grid */
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    
+    color: black;
+    text-align: center;
+    
+    /* Photo by Mo Baghdadi on Unsplash https://unsplash.com/license */
+    background-image: url(../images/mo-baghdadi-109634.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+main section div {
+    margin-top: 80%;
+    background-color: white;
+    padding: 1em;
+    text-align: center;
+    border-radius: 5px;
+    filter: drop-shadow(0px 2px 6px rgba(0,0,0,0.15));
+}
+
+main section h1 {
+    position: absolute;
+    padding: 2px 20px;
+    font-size: 2em;
+    background-color: white;
+    border-radius: 5px;
+    filter: drop-shadow(0px 2px 6px rgba(0,0,0,0.15));
+}
+
+nav a {
+    color: black;
+}
+
+nav ul li {
+   color: black;
+   text-align: center;
+   vertical-align: baseline;
+   line-height: 20px;
+   
+}
+
+nav ul li.logo {
+    font-size: 1.5em;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+ul{
+    padding: 0;
+    list-style-type: none;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    /* YES, I know a 1 column grid is silly! BUT, I realllly wanted my design to look pretty. Commented below is a 2 column grid to prove that My nested grid works beautifully :) */
+    /* grid-template-columns: 1fr 1fr; */
+} 
+

@@ -1,0 +1,201 @@
+     /****************************
+     CSS Custom Properties
+    ****************************/
+
+   :root {
+       
+       /* passing SASS into this css var because SASS cannot be placed within the calc in the css var, it will compile as if it's a string with a $ and everything. */
+
+       --standard-space: $standard-space;
+
+       --one-column:  0 0 calc(100% - calc( var(--standard-space) * 2));
+       --two-column:  0 0 calc(100% - calc( var(--standard-space) * 2));
+       --three-column:  0 0 calc(100% - calc( var(--standard-space) * 2));
+       --four-column:  0 0 calc(100% - calc( var(--standard-space) * 2));
+       --five-column:  0 0 calc(100% - calc( var(--standard-space) * 2));
+       --six-column:  0 0 calc(100% - calc( var(--standard-space) * 2));
+   }
+
+
+    /**************************
+    GRID SYSTEM
+    **************************/
+
+    .row {
+        display: flex;
+    }
+
+    /* example of an extend */
+
+    %column-spacing {
+        margin-left: $standard-space;
+        margin-bottom: $standard-space;
+        padding: $standard-space;
+    }
+
+    .one-column {
+        @extend %column-spacing;
+        flex: var(--one-column);
+    }
+
+    .two-column {
+        @extend %column-spacing;
+        flex: var(--two-column);
+    }
+
+    .three-column {
+        @extend %column-spacing;
+        flex: var(--three-column);
+    }
+
+    .four-column {
+        @extend %column-spacing;
+        flex: var(--four-column);
+    }
+
+    .five-column {
+        @extend %column-spacing;
+        flex: var(--five-column);
+    }
+
+    .six-column {
+        @extend %column-spacing;
+        flex: var(--six-column);
+    }
+
+
+    /*************************
+    NAVIGATIONAL LAYOUT
+    *************************/
+
+    /* Example of nesting. I'm setting the nav to flex because it's the easiest way I know how to align the base of the logo and the links */
+
+    nav { 
+        display: flex;
+        align-items: baseline;  
+        ul {
+            display: flex;
+            li {
+                padding-left: $standard-space; 
+            }
+        }
+    }
+
+  
+
+
+    /**************************
+    HEADER LAYOUT
+    **************************/
+
+    header.spotlight {
+        padding: $large-space $standard-space;
+        width: 100%;
+        text-align: center;
+        background-color: $dark-color;
+        background-size: cover;
+    }
+
+
+    /**************************
+    BIO LAYOUT
+    **************************/
+
+    .personal-bio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+/******************************** MEDIA QUERY **************************************/
+/***********************************************************************************/
+
+@media (max-width: 39em) {
+    
+    .row {
+        display: block;
+    }
+    
+    .one-column, .two-column, .three-column, .four-column, .five-column, .six-column {
+        width: var(--six-column);
+        margin-left: $no-space;
+    }
+    
+    nav { 
+      display: block;
+      text-align: center;
+    } 
+
+    nav > ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .personal-bio {
+        display: block;
+    }
+    
+}
+
+/******************************** MEDIA QUERY **************************************/
+/***********************************************************************************/
+
+@media (min-width: 40em) and (max-width: 59em) {
+    
+
+    /**************************
+    GRID SYSTEM
+    **************************/
+
+    :root {
+       --standard-space: $standard-space;
+       --one-column:  0 0 calc((100% - calc( var(--standard-space) * 7)) / 6 );
+       --two-column:  0 0 calc((100% - calc( var(--standard-space) * 4)) / 3);
+       --three-column:  0 0 calc((100% - calc( var(--standard-space) * 3)) / 2);
+       --four-column:  0 0 calc(((100% - calc( var(--standard-space) * 4)) / 3) * 2 + 1em);
+       --five-column:  0 0 calc(((100% - calc( var(--standard-space) * 3)) / 2) + ((100% - calc( var(--standard-space) * 4)) / 3) + var(--standard-space));
+       --six-column:  0 0 calc(100% - calc( var(--standard-space) * 2));
+   }
+
+    /**************************
+    HEADER LAYOUT
+    **************************/
+
+        header.spotlight {
+            padding: $xlarge-space $standard-space;
+            background-color: $dark-color;
+        }
+}
+
+/******************************** MEDIA QUERY **************************************/
+/***********************************************************************************/
+
+@media (min-width: 60em) {
+
+    /**************************
+    GRID SYSTEM
+    **************************/
+
+   :root {
+       --standard-space: $standard-space;
+       --one-column:  0 0 calc((100% - calc( var(--standard-space) * 7)) / 6 );
+       --two-column:  0 0 calc((100% - calc( var(--standard-space) * 4)) / 3);
+       --three-column:  0 0 calc((100% - calc( var(--standard-space) * 3)) / 2);
+       --four-column:  0 0 calc(((100% - calc( var(--standard-space) * 4)) / 3) * 2 + 1em);
+       --five-column:  0 0 calc(((100% - calc( var(--standard-space) * 3)) / 2) + ((100% - calc( var(--standard-space) * 4)) / 3) + var(--standard-space));
+       --six-column:  0 0 calc(100% - calc( var(--standard-space) * 2));
+   }
+
+    /**************************
+    HEADER LAYOUT
+    **************************/
+
+        header.spotlight {
+            padding: $xlarge-space $standard-space;
+            background-color: $dark-color;
+            width: 100%;
+            
+        }
+
+        
+}

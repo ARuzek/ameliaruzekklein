@@ -1,0 +1,94 @@
+/* Changing to a box border system allows for much easier measurements */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Setting the viewport height to 100% explicitly is recommended by csstricks to make sure that every page will fill up your device and not look awkward. */
+
+body {
+    min-height:  100vh;
+    max-width: 100%;
+    margin: auto;
+    /* Setting the background to a beautiful neutral*/
+    background-color: $light-color;
+    font-family: $paragraph-font; 
+}
+
+/* Setting the fonts since these are going to remain constant and consistent */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $header-font;
+    font-weight: 700;
+    margin: $small-space $no-space;
+    color: $dark-color;
+}
+
+p, a {
+    font-family: $paragraph-font;
+    font-weight: 400;
+    margin: $small-space $no-space;
+}
+
+/* This typography system is based on a lot of web design articles I read about vertical rhythm. If you use multiples of the same size, all your type will line up as if your writing in a lined notebook. I chose my base value to be .5rem. */
+
+h1 {
+    font-size: $font-size-xxl;
+    line-height: 6rem;
+}
+
+h2 {
+    font-size: $font-size-xl;
+    line-height: $font-size-xxl;
+}
+
+h3 {
+    font-size: $font-size-l;
+    line-height: $font-size-xl;
+}
+
+h4 {
+    font-size: $font-size-m;
+    line-height: $font-size-l;
+}
+
+h5, p, a, pre {
+    font-size: $font-size-s;
+    line-height: $font-size-m;
+}
+
+h6 {
+    font-size: $font-size-xs;
+    line-height: $font-size-s;
+}
+
+pre {
+    font-family: 'Source Code Pro', monospace;
+    background-color: $light-color;
+}
+
+@media (max-width: 39em) {
+    
+    /* The large sizes of font shift down when viewed on mobile */
+    
+    h1 {
+        font-size: $font-size-l;
+        line-height: $font-size-xl;
+    }
+
+    h2 {
+        font-size: $font-size-l;
+        line-height: $font-size-xl;
+    }
+
+    h3 {
+        font-size: $font-size-m;
+        line-height: $font-size-l;
+    }
+    
+    
+}

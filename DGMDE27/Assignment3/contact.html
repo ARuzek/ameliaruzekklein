@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--AMELIA RUZEK-->
+<!--DGMDE27 ASSIGNMENT 3-->
+<!--Full Disclosure Note: I used this assignment as an opportunity to update one of my personal webpages (ameliaruzek.com). While similar in content, I've updated all the copywriting, images, and have completely implemented 100% new markup & styling. -->
+<!--DOES NOT VALIDATE BECAUSE OF UIKIT ATTRIBUTES-->
+<html>
+    <head>
+        <title>Amelia Ruzek</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+    </head>
+    <body>
+
+          <!--
+          NAVIGATION
+          ------------------------------------------------------------------->
+          <header class="uk-hidden@s uk-flex uk-flex-center uk-flex-middle">
+            <a href="index.html">
+              <img src="images/Logo.png" alt="Amelia Ruzek Logo. Click for Homepage."/>
+            </a>
+            <div role="navigation" class="uk-navbar-toggle uk-navbar-right" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav"></div>
+          </header>
+          <nav class="uk-navbar-container uk-visible@s" uk-navbar>
+            <div class="uk-navbar-left" uk-scrollspy="cls:uk-animation-fade">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-parent">
+                      <a href="index.html">
+                        <img src="images/Logo.png" alt="Amelia Ruzek Logo. Click for Homepage."/>
+                      </a>
+                    </li>
+                    <li class="uk-parent"><a href="index.html#pastwork" uk-scroll>Past Work</a></li>
+                    <li class="uk-parent"><a href="index.html#services" uk-scroll>Services</a></li>
+                    <li class="uk-parent"><a href="index.html#about">About</a></li>
+                    <li class="uk-active"><a href="">Contact</a></li>
+                </ul>
+            </div>
+          </nav>
+
+          <!--
+          OFF CANVAS NAVIGATION
+          --------------------------------------------------------------------->
+          <div class="uk-offcanvas-content">
+            <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+              <div class="uk-offcanvas-bar">
+                <ul class="uk-nav uk-nav-default">
+                    <li class="uk-active"><a href="index.html">Amelia Ruzek</a></li>
+                    <li class="uk-parent"><a href="index.html#pastwork" uk-scroll>Past Work</a></li>
+                    <li class="uk-parent"><a href="index.html#services" uk-scroll>Services</a></li>
+                    <li class="uk-parent"><a href="index.html#about" uk-scroll>About</a></li>
+                    <li class="uk-active"><a href="">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!--
+          CONTACT FORM
+          ------------------------------------------------------------------->
+          <main class="uk-container">
+            <div class="uk-h2 uk-text-center" uk-scrollspy="cls:uk-animation-fade">
+              <h2>Contact Me</h2>
+            </div>
+            <form class="uk-form-stacked">
+              <div class="uk-margin">
+                  <label class="uk-form-label" for="form-stacked-text">Your Name</label>
+                  <div class="uk-form-controls">
+                      <input class="uk-input" id="form-stacked-text" type="text" placeholder="I need to know who you are...">
+                  </div>
+              </div>
+              <div class="uk-margin">
+                  <label class="uk-form-label" for="form-stacked-email">Your Email</label>
+                  <div class="uk-form-controls">
+                      <input class="uk-input" id="form-stacked-email" type="email" placeholder="I need to know how to contact you...">
+                  </div>
+              </div>
+              <div class="uk-margin">
+                  <label class="uk-form-label" for="form-stacked-select">Select the service that best meets your needs</label>
+                  <div class="uk-form-controls">
+                      <select class="uk-select" id="form-stacked-select">
+                          <option>I need graphic design</option>
+                          <option>I need a website</option>
+                          <option>I need an animation</option>
+                          <option>I need something photoshopped</option>
+                          <option>I need something coded</option>
+                          <option>I need something else</option>
+                      </select>
+                  </div>
+              </div>
+              <div class="uk-margin">
+                  <label class="uk-form-label" for="form-stacked-textarea">Description</label>
+                  <div class="uk-form-controls">
+                      <input class="uk-textarea" id="form-stacked-textarea" type="textarea" placeholder="Tell me more about your project...">
+                  </div>
+              </div>
+              <input type="submit" value="SEND" class="uk-button uk-button-primary">
+            </form>
+          </main>
+          <footer class="uk-background-cover uk-background-secondary">
+            <p class="uk-text-center">Made by Amelia Ruzek using UIKit</p>
+          </footer>
+    </body>
+</html>

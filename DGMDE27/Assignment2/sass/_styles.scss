@@ -1,0 +1,142 @@
+a {
+    color: $dark-color;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.example div{
+    background-color: $medium-light-color;
+    font-size: $font-size-s;
+    padding: $standard-space $no-space;
+    text-align: center;
+}
+
+.logo {
+    color: $accent-color;
+    padding-left: $standard-space;
+}
+
+nav * {
+    margin: $standard-space $no-space;
+}
+
+pre {
+    display: inline;
+}
+
+.personal-bio picture img {
+    border-radius: 100%;
+}
+
+
+.side-navigation ,  .content {
+    background-color: $light-color;
+}
+
+.side-navigation {
+    margin-top: $standard-space;
+    padding-top: $standard-space;
+    li {
+        padding-bottom: $standard-space;
+        padding-top: $no-space;
+    }
+}
+
+ul {
+    list-style: none;
+    padding: $no-space;
+    margin: $no-space;
+}
+
+
+.warning-notification {
+    background-color: $medium-color;
+    color: $light-color;
+
+}
+
+@media (min-width: 40em) {
+    .warning-notification {
+        display: none;
+    }
+}
+
+#iamhere {
+    text-decoration: underline;
+}
+
+/* COLOR DEFINITIONS */
+
+.button-primary{
+    @include makeButton(primary);
+}
+
+.button-secondary{
+    @include makeButton(secondary);
+}
+
+.primary-color {
+    background-color: $accent-color;
+}
+
+.secondary-color  {
+    background-color: $complementary-color;
+}
+
+.light-color {
+    background-color: $light-color;
+}
+
+.medium-light-color {
+    background-color: $medium-light-color;
+}
+
+.medium-color {
+    background-color: $medium-color;
+}
+
+.medium-dark-color {
+    background-color: $medium-dark-color;
+}
+
+.dark-color {
+    background-color: $dark-color;
+}
+
+h1.primary-color , h2.primary-color , h3.primary-color, h4.primary-color , h5.primary-color , h6.primary-color , p.primary-color , pre.primary-color {
+    color: $accent-color;
+    background-color: transparent;
+}
+
+h1.secondary-color , h2.secondary-color , h3.secondary-color, h4.secondary-color , h5.secondary-color , h6.secondary-color , p.secondary-color , pre.secondary-color {
+    color: $complementary-color;
+    background-color: transparent;
+}
+
+h1.light-color , h2.light-color , h3.light-color, h4.light-color , h5.light-color , h6.light-color , p.light-color , pre.light-color {
+    color: $light-color;
+    background-color: transparent;
+}
+
+h1.medium-light-color , h2.medium-light-color , h3.medium-light-color, h4.medium-light-color , h5.medium-light-color , h6.medium-light-color , p.medium-light-color , pre.medium-light-color {
+    color: $medium-light-color;
+    background-color: transparent;
+}
+
+h1.medium-color , h2.medium-color , h3.medium-color, h4.medium-color , h5.medium-color , h6.medium-color , p.medium-color , pre.medium-color {
+    color: $medium-color;
+    background-color: transparent;
+}
+
+h1.medium-dark-color , h2.medium-dark-color , h3.medium-dark-color, h4.medium-dark-color , h5.medium-dark-color , h6.medium-dark-color , p.medium-dark-color , pre.medium-dark-color {
+    color: $medium-dark-color;
+    background-color: transparent;
+}
+
+h1.dark-color , h2.dark-color , h3.dark-color, h4.dark-color , h5.dark-color , h6.dark-color , p.dark-color , pre.dark-color {
+    color: $dark-color;
+    background-color: transparent;
+}

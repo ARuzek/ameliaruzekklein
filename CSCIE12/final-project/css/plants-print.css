@@ -1,0 +1,85 @@
+@media print {
+   
+
+    nav, footer{
+        display: none;
+    }
+
+
+    /*BODY HEADER*/
+    .container{ 
+        width: 600px;
+    }
+
+
+    .spotlight{
+        margin-top: 1em;
+        margin-bottom: 2em;
+    }
+
+    .spotlight h1, .spotlight h3, .spotlight h4 {
+        text-align: center;
+        padding-left: 1em;
+        padding-right: 1em;  
+        font-weight: 100;
+        color: black;
+    }
+
+    /*BODY CONTENT*/
+    .full-width-container{
+        width: 100%;
+        background-color: white; 
+    }
+
+    .content h3{
+        padding-top: 1em;
+    }
+
+    .img{
+        padding-top: 2em;
+    }
+
+    .plant-name{
+        text-align: center;
+    }
+
+    #about img, #about .citation{
+        margin-left: 0;
+        padding-right: 2em;
+        padding-bottom: 2em;
+    }
+
+    table{
+        margin-top: 1em;
+    }
+
+    .citation{
+        font-size: 50%;
+        padding-bottom: 2em;
+    }
+
+    .error{
+        text-align: center;
+        color: red;
+    }
+
+    /*REFERENCE TABLE*/
+    tr:nth-child(even) {
+        background: #E0E0E0
+    }
+
+    tr:nth-child(odd) {
+        background: #FFFFFF
+    }
+
+    /*GALLERY - this overwrites the plugin default for title styling to aid reading accessibility*/
+
+    .mfp-title{
+        background-color: black;
+        padding-right: 32px;
+        padding-left: 32px;
+    }
+
+   
+    
+}

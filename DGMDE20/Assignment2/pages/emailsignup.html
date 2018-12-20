@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Foodie</title>
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head>
+
+<body>
+  
+   <header>
+       <h1>FOODIE</h1>
+       <nav>
+           <ul>
+               <li><a href="#main" class="screenReaderOnly">Skip Navigation</a></li>
+               <li><a href="../index.html">Home</a></li>
+               <li><a href="recipeoftheday.html">Recipe of the Day</a></li>
+               <li><a href="emailsignup.html">Email Sign Up</a></li>
+           </ul>
+       </nav>
+   </header>
+   
+   <main id="main">
+       <section class="main-component">
+           <div>
+                <h2>sign up</h2>
+                <p>Fill out the form below to recieve bonus recipes, news, and more delivered via email.</p>
+                <form action="validation-placeholder-text" method="post">
+                    <fieldset>
+                        <legend>Let's get to know each other.</legend>
+                         
+                        <label for="fname">First Name</label> 
+                            <input type="text" id="fname" autofocus>
+                            
+                         <label for="lname">Last Name</label> 
+                            <input type="text" id="lname">    
+
+                        <label for="phone">Phone number</label>
+                            <input type="tel" id="phone" placeholder="000-000-0000">
+
+                        <label for="email">Email</label>
+                            <input type="email" id="email">
+
+                    </fieldset>
+                    <fieldset>
+                        <legend>What's for dinner?</legend>
+                            <label>
+                                <input id="vegan" type="checkbox" value="vegan">Vegan
+                            </label>
+                            <label>
+                                <input id="vegetarian" type="checkbox" value="vegetarian">Vegetarian
+                            </label>
+                            <label>
+                                <input id="glutenfree" type="checkbox" value="glutenfree">Gluten-Free
+                            </label>
+                            <label>
+                                <input id="organic" type="checkbox" value="organic">Organic
+                            </label>
+                        <label>Special requests:
+                            <textarea id="comments" placeholder="Please include any additional dietary restrictions or specific requests here."></textarea>
+                        </label>
+                        <button type="submit">Send Me Recipes!</button>
+                    </fieldset>
+                </form>
+	        </div>
+       </section>
+   </main>
+   
+   <footer>2017 by Amelia</footer>
+   
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+    /**************************
+    GRID SYSTEM
+    **************************/
+
+    .row {
+        display: block;
+    }
+
+    .one-column, .two-column, .three-column, .four-column, .five-column, .six-column {
+        /* I'm using calc because I want the margins to remain a consistant em width rather than a changing percent */
+        width: calc(100% - 2em);
+        margin-left: 1em;
+        margin-bottom: 1em;
+        padding: 1em;
+    }
+
+    /*************************
+    NAVIGATIONAL LAYOUT
+    *************************/
+
+    nav { 
+      display: block;
+      text-align: center;
+    } 
+
+    nav > ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    /**************************
+    HEADER LAYOUT
+    **************************/
+
+    header.spotlight {
+        padding: 5em 1em;
+        width: 100%;
+        text-align: center;
+        background-image: url(../images/Background-640.jpg);
+        background-size: cover;
+    }
+
+
+    /**************************
+    BIO LAYOUT
+    **************************/
+
+    .personal-bio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+@media (min-width: 40em) and (max-width: 59em) {
+    
+    /*************************
+    NAVIGATIONAL LAYOUT
+    *************************/
+
+        /* I'm setting the nav to flex because it's the easiest way I know how to align the base of the logo and the links */
+        nav { 
+            display: flex;
+            align-items: baseline;  
+        }
+
+        nav > ul li {
+            padding-left: 1em; 
+        }
+
+    /**************************
+    GRID SYSTEM
+    **************************/
+
+        .row {
+            display: flex;
+        }
+
+        /* I'm using calc because I want the margins to remain a consistant em width rather than a changing percent */
+
+        .one-column {
+            flex: 0 0 calc((100% - 7em) / 6 );
+        }
+
+        .two-column {
+            flex: 0 0 calc((100% - 4em) / 3);
+        }
+
+        .three-column {
+            flex: 0 0 calc((100% - 3em) / 2);
+        }
+
+        .four-column {
+            flex: 0 0 calc(((100% - 4em) / 3) * 2 + 1em); /* This is trial and error math. ha ha */
+        }
+
+        .five-column {
+            flex: 0 0 calc(((100% - 3em) / 2) + ((100% - 4em) / 3) + 1em);
+        }
+
+        .six-column {
+            flex: 0 0 calc(100% - 2em);
+        }
+
+    /**************************
+    HEADER LAYOUT
+    **************************/
+
+        header.spotlight {
+            padding: 10em 1em;
+            background-image: url(../images/Background-960.jpg);
+        }
+
+        header.spotlight h1.logo {
+            font-size: 3em;
+        }
+}
+
+
+@media (min-width: 60em) {
+    
+    /*************************
+    NAVIGATIONAL LAYOUT
+    *************************/
+        nav { 
+            display: flex;
+            align-items: baseline;  
+        }
+
+        nav > ul li {
+            padding-left: 1em; 
+        }
+
+    /**************************
+    GRID SYSTEM
+    **************************/
+
+        .row {
+            display: flex;
+        }
+
+        .one-column {
+            flex: 0 0 calc((100% - 7em) / 6 );
+        }
+
+        .two-column {
+            flex: 0 0 calc((100% - 4em) / 3);
+        }
+
+        .three-column {
+            flex: 0 0 calc((100% - 3em) / 2);
+        }
+
+        .four-column {
+            flex: 0 0 calc(((100% - 4em) / 3) * 2 + 1em);
+        }
+
+        .five-column {
+            flex: 0 0 calc(((100% - 3em) / 2) + ((100% - 4em) / 3) + 1em);
+        }
+
+        .six-column {
+            flex: 0 0 calc(100% - 2em);
+        }
+
+    /**************************
+    HEADER LAYOUT
+    **************************/
+
+        header.spotlight {
+            padding: 10em 1em;
+            background-image: url(../images/Background-1600.jpg);
+            width: 100%;
+        }
+
+        header.spotlight h1.logo {
+            font-size: 3em;
+        }
+}

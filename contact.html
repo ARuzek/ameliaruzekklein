@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Amelia : Get help with the web development and graphic design needed to build your goals.</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+    </head>
+    <body>
+
+   <!--
+          NAVIGATION
+          ------------------------------------------------------------------->
+          <header class="uk-hidden@s uk-flex uk-flex-center uk-flex-middle">
+            <a href="/">
+              <img src="images/Logo.png" alt="Amelia Ruzek Logo. Click for Homepage."/>
+            </a>
+            <div role="navigation" class="uk-navbar-toggle uk-navbar-right" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav"></div>
+          </header>
+          <nav class="uk-navbar-container uk-visible@s" uk-navbar>
+            <div class="uk-navbar-left" uk-scrollspy="cls:uk-animation-fade">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-parent">
+                      <a href="index.html">
+                        <img src="images/Logo.png" alt="Amelia Ruzek Logo. Click for Homepage."/>
+                      </a>
+                    </li>
+                    <li class="uk-parent"><a href="index.html" uk-scroll>Portfolio</a></li>
+                    
+                    <li class="uk-parent"><a href="index.html" uk-scroll>About</a></li>
+                    
+                    <li class="uk-parent"><a href="https://drive.google.com/file/d/0B0dWcXZpKq7raWhfWGZVVjZ0RjQ/view?usp=sharing" target="_blank" >Resume</a></li>
+                    <li class="uk-parent"><a href="contact.html">Contact</a></li>
+                    <li class="uk-parent"><a href="https://medium.com/@amelia.ruzek.klein" target="_blank">Articles</a></li>
+                    <li class="uk-parent"><a href="https://www.etsy.com/shop/AmeliaDigitalDesign" target="_blank">Get Design Help</a></li>
+                </ul>
+            </div>
+          </nav>
+        
+          <!--
+          OFF CANVAS NAVIGATION
+          --------------------------------------------------------------------->
+          <div class="uk-offcanvas-content">
+            <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+              <div class="uk-offcanvas-bar">
+                <ul class="uk-nav uk-nav-default">
+                    <li class="uk-active"><a href="index.html">Amelia Ruzek</a></li>
+                    <li class="uk-parent"><a href="index.html" uk-scroll>Portfolio</a></li>
+                    <li class="uk-parent"><a href="index.html" uk-scroll>About</a></li>
+                    <li class="uk-parent"><a href="https://drive.google.com/file/d/0B0dWcXZpKq7raWhfWGZVVjZ0RjQ/view?usp=sharing" target="_blank">Resume</a></li>
+                    <li class="uk-parent"><a href="contact.html">Contact</a></li>
+                    <li class="uk-parent"><a href="https://medium.com/@amelia.ruzek.klein" target="_blank">Articles</a></li>
+                    <li class="uk-parent"><a href="https://www.etsy.com/shop/AmeliaDigitalDesign" target="_blank">Get Design Help</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+          <!--
+          CONTACT FORM
+          ------------------------------------------------------------------->
+          <main class="uk-container">
+           <br/>
+            <div class="uk-h2 uk-text-center" uk-scrollspy="cls:uk-animation-fade">
+              <h1>Contact Me</h1>
+            </div>
+            <form class="uk-form-stacked" method="post" action="//formspree.io/amelia.ruzek.klein@gmail.com">
+              <div class="uk-margin">
+                  <label class="uk-form-label" for="form-stacked-text">Your Name</label>
+                  <div class="uk-form-controls">
+                      <input class="uk-input" id="form-stacked-text" type="text" placeholder="Ex: John Smith">
+                  </div>
+              </div>
+              <div class="uk-margin">
+                  <label class="uk-form-label" for="form-stacked-email">Your Email</label>
+                  <div class="uk-form-controls">
+                      <input class="uk-input" id="form-stacked-email" type="email" placeholder="I will never give out your personal information, I just need to know how to communicate with you.">
+                  </div>
+              </div>
+              <div class="uk-margin">
+                  <label class="uk-form-label" for="form-stacked-select">Select the description that best matches your needs</label>
+                  <div class="uk-form-controls">
+                      <select class="uk-select" id="form-stacked-select">
+                          <option>I am requesting design or development help (Freelance / Contract)</option>
+                          <option>I am a recruiter or HR specialist.</option>
+                          <option>I have a question or comment.</option>
+                          <option>Other</option>
+                      </select>
+                  </div>
+              </div>
+              <div class="uk-margin">
+                  <label class="uk-form-label" for="form-stacked-textarea">Your Message</label>
+                  <div class="uk-form-controls">
+                      <input class="uk-textarea" id="form-stacked-textarea" type="textarea" placeholder="Tell me more...">
+                  </div>
+              </div>
+              <input type="submit" value="SEND" class="uk-button uk-button-primary">
+            </form>
+            <!--
+            ABOUT SECTION
+            ------------------------------------------------------------------->
+            <section class="uk-section">
+              <div class="uk-text-center " uk-scrollspy="cls:uk-animation-fade">
+                <h2>Connect With Me</h2>
+                <p>Connect with me on <a href="https://www.linkedin.com/in/ameliaruzek/">LinkedIn</a>, <a href="https://medium.com/@amelia.ruzek.klein">Medium</a>, or <a href="https://twitter.com/AmeliaRuzek">Twitter</a> and check out my <a href="resume.html">Resume</a> if you haven't yet. If you're contacting me about a freelance opportunity, I encourage you to take a look at my <a href="https://www.etsy.com/shop/AmeliaDigitalDesign">Etsy shop</a>, <a href="https://www.fiverr.com/ameliaruzek">Fiverr</a>, or <a href="https://www.peopleperhour.com/freelancer/amelia/designer-developer/2474228">PeoplePerHour</a> where I sell a variety of templates and services.</p>
+                             <!--
+                    PeoplePerHour Profile Widget
+                    The div#pph-hire me is the element
+                    where the iframe will be inserted.
+                    You may move this element wherever
+                    you need to display the widget
+                -->
+                <div id="pph-hireme"></div>
+                <script type="text/javascript">
+                (function(d, s) {
+                    var useSSL = 'https:' == document.location.protocol;
+                    var js, where = d.getElementsByTagName(s)[0],
+                    js = d.createElement(s);
+                    js.src = (useSSL ? 'https:' : 'http:') +  '//www.peopleperhour.com/hire/851435548/2474228.js?width=728&height=115&orientation=horizontal&theme=light&rnd='+parseInt(Math.random()*10000, 10);
+                    try { where.parentNode.insertBefore(js, where); } catch (e) { if (typeof console !== 'undefined' && console.log && e.stack) { console.log(e.stack); } }
+                }(document, 'script'));
+                </script>
+                <br/>
+              </div>
+            </section>
+            
+          </main>
+         
+          <footer class="uk-background-cover uk-background-secondary">
+            <p class="uk-text-center">Made by Amelia Ruzek using UIKit</p>
+          </footer>
+    </body>
+</html>

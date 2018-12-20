@@ -1,0 +1,452 @@
+*, 
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+article .informational {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    padding: 1em;
+    background-color: mediumspringgreen;
+    color: black;
+    border: none;
+    font-size: 1em;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px rgba(0,0,0,.35);
+
+}
+
+/*Added transition and transform to the button*/
+
+button:hover {
+    animation-name: annoyingButton;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+
+}
+
+button, caption, h2, h3, h4, h5, h6, legend, nav a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+caption{
+    font-size: 1.2em;
+    padding-bottom: .2em;
+}
+
+/*Using a canvas tag just in case a more interactive homepage hero is needed in the future. It also makes it easy to separate content from style since the background image is decorative; the page would function as expected without it. This background image is from @joannaboj via https://unsplash.com/photos/MhOoD_h90ks See License at https://unsplash.com/license*/
+canvas {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 2%;
+    background-image: url(../images/joanna-boj-17158.jpg);
+    background-size: cover;
+    /* This filter is an assignment 3 addition to this website*/
+    filter: brightness(.5);
+    z-index: 0;
+}
+
+fieldset{
+    border: none;
+}
+
+footer {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    clear: both;
+}
+
+form button, label, textarea, input{
+    display: block;
+    margin-top: 1em;
+}
+
+h1{
+    font-size: 4em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;  
+}
+
+h2{
+    font-size: 2em;
+}
+
+h3, button{
+    font-size: .8em;
+    font-weight: 500
+}
+
+header {
+    margin: 0 0 2% 0;
+    width: 100%;
+    overflow: auto;
+    background-color: white;
+    box-shadow: 0px 0px 3px rgba(0,0,0,.35);
+    z-index: 200;
+}
+
+header svg {
+    width: 30%;
+    float: left;
+    padding-left: 1em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.hero{
+    position: relative;
+}
+
+.hero div {
+    position: absolute; 
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    color: white;
+    width: 80%;
+    animation-name: textComingIn;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+}
+
+.hero div h1 {
+    margin-bottom: 0;
+}
+
+
+html {
+    box-sizing: border-box;
+    clear: both;
+}
+
+
+img {
+    width: 100%;
+}
+
+@keyframes annoyingButton {
+    from {
+        transform: scale(1);
+    }
+    
+    to {
+        transform: scale(1.04);
+    }
+}
+
+@keyframes foodieCrissCross {
+    
+    0% {
+        
+        fill: #000000; 
+    }
+    
+    50% {
+        transform: scale(1.01);
+    }
+    
+    65% {
+        transform-origin: center;
+        
+    }
+    
+    100% {
+        fill: #00fa9a;
+    }
+    
+}
+
+
+@keyframes forkCrissCross {
+    
+    0% {
+        transform: translate(-90px, 65px) rotate(-45deg);
+        fill: #000000; ; 
+    }
+    
+    50% {
+        transform: rotate(0deg) translateX(0px);
+        transform-origin: bottom left;    
+    }
+    
+    65% {
+        transform-origin: center;
+        
+    }
+    
+    100% {
+        fill: #00fa9a;
+    }
+    
+}
+
+
+
+@keyframes knifeCrissCross {
+    
+    0% {
+        transform: translateX(120px) rotate(45deg);
+        fill: #000000; ; 
+    }
+    
+    50% {
+        transform: rotate(0deg) translateX(0px);
+        transform-origin: bottom right;    
+    }
+    
+    65% {
+        transform-origin: center;
+        
+    }
+    
+    100% {
+        fill: #00fa9a;
+    }
+    
+}
+
+@keyframes textComingIn {
+    
+    from {
+        top: 55%;
+        opacity: 0;
+    }
+    
+    to {
+        top: 50%;
+        opacity: 1;
+    }
+}
+
+input{
+    padding: .5em;
+}
+
+legend{
+    font-size: 1.2em;
+    padding-top: 1em;
+}
+
+main {
+    
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav {
+    width: 70%;
+    float: left;
+    font-size: 1em;
+    font-weight: bold;
+    padding-top: 1.5em;
+}
+
+/*used a transition here*/
+nav a:hover {
+    background-color: mediumspringgreen;
+    transition: background-color 1s ease-in;
+}
+
+nav li {
+    display: inline;
+    padding-right: 2em;
+    
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: right;
+}
+
+p:first-of-type{
+    margin-top: 0;
+}
+
+[scope="col"] {
+    font-weight: bold;
+}
+
+section {
+    clear: both;
+}
+
+/*changed the drop shadow to a filter*/
+section > * {
+    overflow: auto;
+    border-radius: 5px;
+    filter: drop-shadow(0px 2px 6px rgba(0,0,0,0.35));
+    background-color: white;
+    padding: 20px;
+    float: left;
+    margin: 0 2% 2% 0;
+}
+
+section > :last-child {
+    margin-right: 0;
+}
+
+/*changed this hover effect to a transform*/
+section a:hover  {
+       filter: drop-shadow(0px 6px 6px rgba(0,0,0,0.15));
+       transform: translateY(-5px);
+       transition: transform .5s linear, filter .5s linear;
+        
+}
+
+section.helper-component > * {
+    width: 49%;
+}
+
+section.main-component > * {
+    width: 100%;
+}
+
+section.recipe-cards > * {
+    width: 32%;
+}
+
+.screenReaderOnly {
+    
+    /* discovered after using an accessibility checker, that this is the prefered method */
+    
+    position: absolute;
+    top: -10000px;
+    left: -10000px;
+}
+
+/*Ha ha...Realized that what I wanted to do with the SVG required 3 separate animations*/
+
+svg #FOODIE{
+    fill: #00fa9a;
+    animation-name: foodieCrissCross;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+}
+
+svg #fork {
+    fill: #00fa9a;
+    animation-name: forkCrissCross;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    
+}
+
+svg #knife {
+    fill: #00fa9a;
+    animation-name: knifeCrissCross;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    
+}
+
+table {
+    width:100%;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: .2em;
+    text-align: left;
+}
+
+textarea{
+    width: 100%;
+    height: 5em;
+}
+
+th {
+    font-weight: normal;
+}
+
+[type="checkbox"]{
+    display: inline;
+}
+
+
+/* Added a little more responsiveness to the site for no reason to the assignment, but just because it was bothering me */
+
+@media only screen and (max-width: 640px) {
+    
+    article .informational {
+    -webkit-column-count: 1;
+       -moz-column-count: 1;
+            column-count: 1;
+    }
+    
+    header svg {
+    width: 100%;
+    align-content: center;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    }
+    
+    nav {
+    width: 100%;
+    float: none;
+    font-size: 1em;
+    font-weight: bold;
+        padding-top: 4em;
+    padding-bottom: 1em; 
+    }
+    
+    nav li {
+    display: inline;
+    padding-right:2em;
+    
+    }
+
+    nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+    }
+    
+    section.helper-component > * {
+    width: 100%;
+    }
+    
+    section.recipe-cards > * {
+    width: 100%;
+    }
+    
+    
+    
+    
+
+}
+
+
+
+
+
+

@@ -1,0 +1,451 @@
+@import url("https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+/**************************
+    DEFINE COLORS USING SASS FUNCTIONS
+**************************/
+/**************************
+    DEFINE FONTS
+**************************/
+/**************************
+    DEFINE SPACING
+**************************/
+/**************************
+    DEFINE MIXINS
+**************************/
+/* Changing to a box border system allows for much easier measurements */
+/* line 3, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_base.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 7, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_base.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Setting the viewport height to 100% explicitly is recommended by csstricks to make sure that every page will fill up your device and not look awkward. */
+/* line 13, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_base.scss */
+body {
+  min-height: 100vh;
+  max-width: 100%;
+  margin: auto;
+  /* Setting the background to a beautiful neutral*/
+  background-color: #f7ecea;
+  font-family: "Quattrocento Sans", sans-serif;
+}
+
+/****************************
+     WRAPPER LAYOUT
+    ****************************/
+/* line 5, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_layout.scss */
+.wrapper {
+  max-width: 60em;
+  margin: 0 auto;
+}
+
+/****************************
+     CSS Custom Properties
+    ****************************/
+/* line 14, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_layout.scss */
+:root {
+  /* passing SASS into this css var because SASS cannot be placed within the calc in the css var, it will compile as if it's a string with a $ and everything. */
+  --standard-space: 1rem;
+  --one-column: 0 0 calc(100% - calc( var(--standard-space) * 2));
+  --two-column: 0 0 calc(100% - calc( var(--standard-space) * 2));
+  --three-column: 0 0 calc(100% - calc( var(--standard-space) * 2));
+  --four-column: 0 0 calc(100% - calc( var(--standard-space) * 2));
+  --five-column: 0 0 calc(100% - calc( var(--standard-space) * 2));
+  --six-column: 0 0 calc(100% - calc( var(--standard-space) * 2));
+}
+
+/**************************
+    GRID SYSTEM
+    **************************/
+/* line 33, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_layout.scss */
+.row {
+  display: flex;
+}
+
+/* example of an extend */
+/* line 39, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_layout.scss */
+.one-column, .two-column, .three-column, .four-column, .five-column, .six-column {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+/* line 45, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_layout.scss */
+.one-column {
+  flex: var(--one-column);
+}
+
+/* line 50, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_layout.scss */
+.two-column {
+  flex: var(--two-column);
+}
+
+/* line 55, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_layout.scss */
+.three-column {
+  flex: var(--three-column);
+}
+
+/* line 60, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_layout.scss */
+.four-column {
+  flex: var(--four-column);
+}
+
+/* line 65, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_layout.scss */
+.five-column {
+  flex: var(--five-column);
+}
+
+/* line 70, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_layout.scss */
+.six-column {
+  flex: var(--six-column);
+}
+
+/*************************
+    NAVIGATIONAL LAYOUT
+    *************************/
+/* Example of nesting. I'm setting the nav to flex because it's the easiest way I know how to align the base of the logo and the links */
+/* line 82, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_layout.scss */
+nav.topnavigation {
+  display: flex;
+  align-items: baseline;
+}
+
+/* line 85, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_layout.scss */
+nav.topnavigation ul {
+  display: flex;
+}
+
+/* line 87, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_layout.scss */
+nav.topnavigation ul li {
+  padding-left: 1rem;
+}
+
+/* line 93, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_layout.scss */
+.side-navigation {
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+/* line 96, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_layout.scss */
+.side-navigation li {
+  padding-bottom: 1rem;
+  padding-top: 0rem;
+}
+
+/* line 102, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_layout.scss */
+nav * {
+  margin: 1rem 0rem;
+}
+
+/**************************
+    LIST LAYOUT
+    **************************/
+/* line 110, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_layout.scss */
+ul {
+  list-style: none;
+  padding: 0rem;
+  margin: 0rem;
+}
+
+/**************************
+    HEADER LAYOUT
+    **************************/
+/* line 120, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_layout.scss */
+header.spotlight {
+  padding: 5rem 1rem;
+  width: 100%;
+  text-align: center;
+  background-color: #0e1f22;
+  background-size: cover;
+}
+
+/******************************** MEDIA QUERY **************************************/
+/***********************************************************************************/
+@media (max-width: 39em) {
+  /* line 134, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_layout.scss */
+  .row {
+    display: block;
+  }
+  /* line 138, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_layout.scss */
+  .one-column, .two-column, .three-column, .four-column, .five-column, .six-column {
+    width: var(--six-column);
+    margin-left: 0rem;
+  }
+  /* line 143, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_layout.scss */
+  nav {
+    display: block;
+    text-align: center;
+  }
+  /* line 148, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_layout.scss */
+  nav > ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+/******************************** MEDIA QUERY **************************************/
+/***********************************************************************************/
+@media (min-width: 40em) and (max-width: 59em) {
+  /**************************
+    GRID SYSTEM
+    **************************/
+  /* line 167, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_layout.scss */
+  :root {
+    --standard-space: 1rem;
+    --one-column: 0 0 calc((100% - calc( var(--standard-space) * 7)) / 6);
+    --two-column: 0 0 calc((100% - calc( var(--standard-space) * 4)) / 3);
+    --three-column: 0 0 calc((100% - calc( var(--standard-space) * 3)) / 2);
+    --four-column: 0 0 calc(((100% - calc( var(--standard-space) * 4)) / 3) * 2 + 1em);
+    --five-column: 0 0 calc(((100% - calc( var(--standard-space) * 3)) / 2) + ((100% - calc( var(--standard-space) * 4)) / 3) + var(--standard-space));
+    --six-column: 0 0 calc(100% - calc( var(--standard-space) * 2));
+  }
+  /**************************
+    HEADER LAYOUT
+    **************************/
+  /* line 181, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_layout.scss */
+  header.spotlight {
+    padding: 10rem 1rem;
+    background-color: #0e1f22;
+  }
+  /**************************
+    MOBILE ONLY ITEM
+    **************************/
+  /* line 189, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_layout.scss */
+  .mobile-only {
+    display: none;
+  }
+}
+
+/******************************** MEDIA QUERY **************************************/
+/***********************************************************************************/
+@media (min-width: 60em) {
+  /**************************
+    GRID SYSTEM
+    **************************/
+  /* line 203, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_layout.scss */
+  :root {
+    --standard-space: 1rem;
+    --one-column: 0 0 calc((100% - calc( var(--standard-space) * 7)) / 6);
+    --two-column: 0 0 calc((100% - calc( var(--standard-space) * 4)) / 3);
+    --three-column: 0 0 calc((100% - calc( var(--standard-space) * 3)) / 2);
+    --four-column: 0 0 calc(((100% - calc( var(--standard-space) * 4)) / 3) * 2 + 1em);
+    --five-column: 0 0 calc(((100% - calc( var(--standard-space) * 3)) / 2) + ((100% - calc( var(--standard-space) * 4)) / 3) + var(--standard-space));
+    --six-column: 0 0 calc(100% - calc( var(--standard-space) * 2));
+  }
+  /**************************
+    HEADER LAYOUT
+    **************************/
+  /* line 217, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_layout.scss */
+  header.spotlight {
+    padding: 10rem 1rem;
+    background-color: #0e1f22;
+    width: 100%;
+  }
+  /**************************
+    MOBILE ONLY ITEM
+    **************************/
+  /* line 227, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_layout.scss */
+  .mobile-only {
+    display: none;
+  }
+}
+
+/**************************
+    FONT SYSTEM
+**************************/
+/* Setting the fonts since these are going to remain constant and consistent */
+/* line 7, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_styles.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: 700;
+  margin: 0.5rem 0rem;
+  color: #0e1f22;
+}
+
+/* line 14, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_styles.scss */
+p, a {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: 400;
+  margin: 0.5rem 0rem;
+  color: #0e1f22;
+}
+
+/* line 21, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_styles.scss */
+pre {
+  font-family: 'Source Code Pro', monospace;
+  display: inline;
+}
+
+/* This typography system is based on a lot of web design articles I read about vertical rhythm. If you use multiples of the same size, all your type will line up as if your writing in a lined notebook. I chose my base value to be .5rem. */
+/* line 28, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_styles.scss */
+h1 {
+  font-size: 4rem;
+  line-height: 6rem;
+}
+
+/* line 33, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_styles.scss */
+h2 {
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
+/* line 38, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_styles.scss */
+h3 {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+/* line 43, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_styles.scss */
+h4 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+/* line 48, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_styles.scss */
+h5, p, a, pre {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+/* line 53, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_styles.scss */
+h6 {
+  font-size: 0.5rem;
+  line-height: 1rem;
+}
+
+@media (max-width: 39em) {
+  /* The large sizes of font shift down when viewed on mobile */
+  /* line 64, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_styles.scss */
+  h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  /* line 69, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_styles.scss */
+  h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  /* line 74, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_styles.scss */
+  h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+/**************************
+    COLOR SYSTEM
+**************************/
+/* line 86, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_styles.scss */
+.primary-color {
+  background-color: #4193a1;
+}
+
+/* line 90, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_styles.scss */
+.secondary-color {
+  background-color: #a14f41;
+}
+
+/* line 94, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_styles.scss */
+.light-color {
+  background-color: #f7ecea;
+}
+
+/* line 98, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_styles.scss */
+.medium-light-color {
+  background-color: #efdcd8;
+}
+
+/* line 102, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_styles.scss */
+.medium-color {
+  background-color: #245158;
+}
+
+/* line 106, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_styles.scss */
+.dark-color {
+  background-color: #0e1f22;
+}
+
+/* line 110, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_styles.scss */
+h1.primary-color, h2.primary-color, h3.primary-color, h4.primary-color, h5.primary-color, h6.primary-color, p.primary-color, pre.primary-color, a.primary-color {
+  color: #4193a1;
+  background-color: transparent;
+}
+
+/* line 115, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_styles.scss */
+h1.secondary-color, h2.secondary-color, h3.secondary-color, h4.secondary-color, h5.secondary-color, h6.secondary-color, p.secondary-color, pre.secondary-color, a.secondary-color {
+  color: #a14f41;
+  background-color: transparent;
+}
+
+/* line 120, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_styles.scss */
+h1.light-color, h2.light-color, h3.light-color, h4.light-color, h5.light-color, h6.light-color, p.light-color, pre.light-color, a.light-color {
+  color: #f7ecea;
+  background-color: transparent;
+}
+
+/* line 125, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_styles.scss */
+h1.medium-light-color, h2.medium-light-color, h3.medium-light-color, h4.medium-light-color, h5.medium-light-color, h6.medium-light-color, p.medium-light-color, pre.medium-light-color, a.medium-light-color {
+  color: #efdcd8;
+  background-color: transparent;
+}
+
+/* line 130, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_styles.scss */
+h1.medium-color, h2.medium-color, h3.medium-color, h4.medium-color, h5.medium-color, h6.medium-color, p.medium-color, pre.medium-color, a.medium-color {
+  color: #245158;
+  background-color: transparent;
+}
+
+/* line 135, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_styles.scss */
+h1.dark-color, h2.dark-color, h3.dark-color, h4.dark-color, h5.dark-color, h6.dark-color, p.dark-color, pre.dark-color, a.dark-color {
+  color: #0e1f22;
+  background-color: transparent;
+}
+
+/* line 140, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_styles.scss */
+.center {
+  text-align: center;
+}
+
+/**************************
+    IMAGE SYSTEM
+**************************/
+/* line 148, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_styles.scss */
+.circular-img {
+  border-radius: 100%;
+}
+
+/**************************
+    LINK SYSTEM
+**************************/
+/* line 156, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_styles.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 160, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_styles.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/**************************
+    BUTTON SYSTEM
+**************************/
+/* line 168, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_styles.scss */
+.button-primary {
+  padding: 1rem;
+  color: #f7ecea;
+  background-color: #4193a1;
+}
+
+/* line 172, /Users/ameliaruzek/Desktop/DGMDE27/DGMDE27/Assignment4/sass/_styles.scss */
+.button-secondary {
+  padding: 1rem;
+  color: #0e1f22;
+  background-color: #efdcd8;
+}
+
+/*# sourceMappingURL=../css/queen.map */

@@ -1,0 +1,35 @@
+/* Changing to a box border system allows for much easier measurements */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Setting the viewport height to 100% explicitly is recommended by csstricks to make sure that every page will fill up your device and not look awkward. */
+
+body {
+    min-height:  100vh;
+    max-width: 100%;
+    margin: auto;
+    /* Setting the background to a beautiful neutral gray */
+    background-color: #f2f2f2;
+}
+
+/* Setting the fonts since these are going to remain constant and consistent */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', serif;
+    margin-top: 0;
+}
+
+p, a {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.logo {
+    font-family: 'Montserrat Alternates', sans-serif;
+}

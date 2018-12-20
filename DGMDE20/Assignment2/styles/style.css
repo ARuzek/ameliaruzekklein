@@ -1,0 +1,251 @@
+a {
+    color: black;
+    text-decoration: none;
+}
+
+article .informational {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    padding: 1em;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 1em;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px rgba(0,0,0,.35);
+}
+
+button:hover {
+    background-color: #222222;
+    text-decoration: underline;
+    padding-left: 1.1em;
+    padding-right: 1.1em;
+    box-shadow: 0px 0px 3px rgba(0,0,0,.35);
+}
+
+button, caption, h1, h2, h3, h4, h5, h6, legend, nav a {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+caption{
+    font-size: 1.2em;
+    padding-bottom: .2em;
+}
+
+/*Using a canvas tag just in case a more interactive homepage hero is needed in the future. It also makes it easy to separate content from style since the background image is decorative; the page would function as expected without it. This background image is from @joannaboj via https://unsplash.com/photos/MhOoD_h90ks See License at https://unsplash.com/license*/
+canvas {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 2%;
+    background-image: url(../images/joanna-boj-17158.jpg);
+    z-index: 0;
+}
+
+fieldset{
+    border: none;
+}
+
+footer {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    clear: both;
+}
+
+form button, label, textarea, input{
+    display: block;
+    margin-top: 1em;
+}
+
+h2{
+    font-size: 2em;
+}
+
+header {
+    margin: 0 0 2% 0;
+    width: 100%;
+    overflow: auto;
+    background-color: white;
+    box-shadow: 0px 0px 3px rgba(0,0,0,.35);
+    z-index: 200;
+}
+
+header h1 {
+    width: 30%;
+    float: left;
+    padding-left: 1em;
+}
+
+.hero{
+    position: relative;
+}
+
+.hero div {
+    position: absolute; 
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    color: white;
+    padding: 1em;
+    background: #555555; 
+    background: -webkit-radial-gradient(#555555, #222222);
+    background: -o-radial-gradient(#555555, #222222); 
+    background: -moz-radial-gradient(#555555, #222222);
+    background: radial-gradient(#555555, #222222);
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px rgba(0,0,0,.35);
+}
+
+
+html {
+    box-sizing: border-box;
+    clear: both;
+}
+
+*, 
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+img {
+    width: 100%;
+}
+
+input{
+    padding: .5em;
+}
+
+legend{
+    font-size: 1.2em;
+    padding-top: 1em;
+}
+
+main {
+    
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav {
+    width: 70%;
+    float: left;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-top: 1.5em;
+}
+
+nav a:hover {
+    color: #777777;
+    text-decoration: underline;
+}
+
+nav li {
+    display: inline;
+    padding-right: 2em;
+    
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: right;
+}
+
+p:first-of-type{
+    margin-top: 0;
+}
+
+[scope="col"] {
+    font-weight: bold;
+}
+
+section {
+    clear: both;
+}
+
+section > * {
+    overflow: auto;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,.35);
+    background-color: white;
+    padding: 20px;
+    float: left;
+    margin: 0 2% 2% 0;
+}
+
+section > :last-child {
+    margin-right: 0;
+}
+
+section a:hover  {
+       box-shadow: 0px 6px 6px rgba(0,0,0,.15);
+       margin-top: -1%;
+}
+
+section.helper-component > * {
+    width: 49%;
+}
+
+section.main-component > * {
+    width: 100%;
+}
+
+section.recipe-cards > * {
+    width: 32%;
+}
+
+.screenReaderOnly {
+    
+    /* discovered after using an accessibility checker, that this is the prefered method */
+    
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+}
+
+table {
+    width:100%;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: .2em;
+    text-align: left;
+}
+
+textarea{
+    width: 100%;
+    height: 5em;
+}
+
+th {
+    font-weight: normal;
+}
+
+[type="checkbox"]{
+    display: inline;
+}
+
+
+
+
+
+
+
+

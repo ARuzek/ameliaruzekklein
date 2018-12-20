@@ -1,0 +1,480 @@
+{
+	"plants": [
+
+
+		{
+			"large_image": "images/Antrium-800.jpg",
+			"small_image": "images/thumb/Antrium-400.jpg",
+            "image_alt": "Computer generated illustration of an alien plant with green and black stripes. It has four glowing tenticles at the top.",
+			"name": "Antrium",
+            "price": "41.3",
+			"description": "A chemical present in the luminous leaves of the glowing plants found in caves. Antrium grows in any climate.",
+            "source": "Emedou Mundonobo",
+            "about_source": "Mid-Level Toxicity",
+            "citation-name": "This in-game screenshot was taken by username: LEXMECHANIC ",
+            "citation-link": "http://steamcommunity.com/sharedfiles/filedetails/?id=808051604",
+            "citation-site": "http://steamcommunity.com" ,
+            "citation-date": "Nov 27, 2016" ,
+            "citation-company": "Valve Corporation" ,
+            "citation-address": "Bellevue, WA 98009" ,
+            "newLineNeeded": false
+		},
+        
+        {
+			"large_image": "images/Calium-800.jpg",
+			"small_image": "images/thumb/Calium-400.jpg",
+            "image_alt": "Computer generated illustration of a squat green pimpled blob of goo. It's shown spouting toxins into the air.",
+			"name": "Calium",
+            "price": "288.8",
+			"description": "Calium grows on warm hostile planets with extreme radiation. It looks like a small tree root.",
+            "source": "Togawajim",
+            "about_source": "Mid-Level Heat, Mid-Level Toxicity, Extreme Radiation",
+            "citation-name": "This in-game screenshot was taken by username: MRTEXASFREEDOM",
+            "citation-link": "http://steamcommunity.com/sharedfiles/filedetails/?id=749449479",
+            "citation-site": "http://steamcommunity.com" ,
+            "citation-date": "Aug 22, 2016" ,
+            "citation-company": "Valve Corporation" ,
+            "citation-address": "Bellevue, WA 98009" ,
+            "newLineNeeded": false
+		},
+        
+        {
+			"large_image": "images/Candensium-800.jpg",
+			"small_image": "images/thumb/Candensium-400.jpg",
+            "image_alt": "Computer generated illustration of a small flowering plant similar in texture to a dandelion.",
+			"name": "Candensium",
+            "price": "171.9",
+			"description": "A chemical found in the roots of trees that live in radioactive biomes. Calium grows on warm planets with extreme radiation. It looks like a small tree root. A Haz-Mat Gauntlet is needed to collect this resource. ",
+            "source": "Togawajim",
+            "about_source": "Mid-Level Heat, Mid-Level Toxicity, Extreme Radiation",
+            "citation-name": "This in-game screenshot was taken by username: KAYLA SILVERFOX",
+            "citation-link": "http://steamcommunity.com/sharedfiles/filedetails/?id=812316098",
+            "citation-site": "http://steamcommunity.com" ,
+            "citation-date": "Dec 4, 2016" ,
+            "citation-company": "Valve Corporation" ,
+            "citation-address": "Bellevue, WA 98009" ,
+            "newLineNeeded": false
+		},
+        
+        {
+			"large_image": "images/Carbon-800.jpg",
+			"small_image": "images/thumb/Carbon-400.jpg",
+            "image_alt": "Computer generated illustration of a large tree in front of a pink sky.",
+			"name": "Carbon",
+            "price": "6.9",
+			"description": "Carbon is an important and abundant element used to recharge weaponry, mining equipment, and exosuit life support. Carbon can be collected from nearly every plant.",
+            "source": "Unknown",
+            "about_source": "Unknown",
+            "citation-name": "This in-game screenshot was taken by username: Cleyton Mota",
+            "citation-link": "http://steamcommunity.com/sharedfiles/filedetails/?id=745608948",
+            "citation-site": "http://steamcommunity.com" ,
+            "citation-date": "Aug 16, 2016" ,
+            "citation-company": "Valve Corporation" ,
+            "citation-address": "Bellevue, WA 98009" ,
+            "newLineNeeded": true
+		},
+        
+		{
+			"large_image": "images/Coryzagen-800.jpg",
+			"small_image": "images/thumb/Coryzagen-400.jpg",
+            "image_alt": "Computer generated illustration of a purple alien flowering plant wwith a thick stem and large leaves",
+			"name": "Coryzagen",
+            "price": "158.1",
+			"description": "A chemical found only in the leaves of the frost-resistent medium sized plants that grow in snow biomes. Coryzagen grows on cold planets far from the system's star. A Haz-Mat Gauntlet is needed to collect this resource.",
+            "source": "Unknown",
+            "about_source": "Unknown",
+            "citation-name": "This in-game screenshot was taken by username: DARKFLEMISH",
+            "citation-link": "http://steamcommunity.com/sharedfiles/filedetails/?id=811116000",
+            "citation-site": "http://steamcommunity.com" ,
+            "citation-date": "Dec 3, 2016" ,
+            "citation-company": "Valve Corporation" ,
+            "citation-address": "Bellevue, WA 98009" ,
+            "newLineNeeded": false
+		},
+        
+        {
+			"large_image": "images/Murrine-800.jpg",
+			"small_image": "images/thumb/Murrine-400.jpg",
+            "image_alt": "Computer generated illustration of a golden globes stuck together like tall crooked snowmen.",
+			"name": "Murrine",
+            "price": "302.5",
+			"description": "Valuable commodity known for it's charming qualities.",
+            "source": "Unknown",
+            "about_source": "Unknown",
+            "citation-name": "This in-game screenshot was taken by username: SIBITO",
+            "citation-link": "http://steamcommunity.com/sharedfiles/filedetails/?id=744036404",
+            "citation-site": "http://steamcommunity.com" ,
+            "citation-date": "Aug 14, 2016" ,
+            "citation-company": "Valve Corporation" ,
+            "citation-address": "Bellevue, WA 98009" ,
+            "newLineNeeded": false
+		},
+        
+        {
+			"large_image": "images/Platinum-800.jpg",
+			"small_image": "images/thumb/Platinum-400.jpg",
+            "image_alt": "Computer generated illustration of a small bright blue plant with large blossoms.",
+			"name": "Platinum",
+            "price": "55",
+			"description": "Powerful element used to create valuable starship and exosuit components. A vital ingredient in many technological blueprints. Platium is found on nearly every planet.",
+            "source": "Unknown",
+            "about_source": "Unknown",
+            "citation-name": "This in-game screenshot was sourced from: No Man's Sky resources guide To Plutonium and beyond by Jeffrey Parkin",
+            "citation-link": "http://www.polygon.com/no-mans-sky/2016/8/9/12412122/resources-guide-list",
+            "citation-site": "http://www.polygon.com" ,
+            "citation-date": "Aug 9, 2016" ,
+            "citation-company": "Vox Media, Inc." ,
+            "citation-address": "Washington, DC 20036" ,
+            "newLineNeeded": false
+		},
+        
+        {
+			"large_image": "images/Radnox-800.jpg",
+			"small_image": "images/thumb/Radnox-400.jpg",
+            "image_alt": "Computer generated illustration of a floating alien round plant with dangling roots similar to a jellyfish.",
+			"name": "Radnox",
+            "price": "302.5",
+			"description": "Mysterious and valuable chemical resource. Radnox is found on thin atmosphered planets without a climate. ",
+            "source": "Unknown",
+            "about_source": "Unknown",
+            "citation-name": "This in-game screenshot was taken by username: RAZORHOG8",
+            "citation-link": "http://steamcommunity.com/sharedfiles/filedetails/?id=757743157",
+            "citation-site": "http://steamcommunity.com" ,
+            "citation-date": "Sept 4, 2016" ,
+            "citation-company": "Valve Corporation" ,
+            "citation-address": "Bellevue, WA 98009" ,
+            "newLineNeeded": true
+		},
+        
+        {
+			"large_image": "images/Rigogen-800.jpg",
+			"small_image": "images/thumb/Rigogen-400.jpg",
+            "image_alt": "Computer generated illustration of a glowing underwater alien plant.",
+			"name": "Rigogen",
+            "price": "41.3",
+			"description": "A chemical found in the roots of certain underwater plants.",
+            "source": "Unknown",
+            "about_source": "Unknown",
+            "citation-name": "This in-game screenshot was taken by username: DARKFLEMISH",
+            "citation-link": "http://steamcommunity.com/sharedfiles/filedetails/?id=811654251",
+            "citation-site": "http://steamcommunity.com" ,
+            "citation-date": "Dec 3, 2016" ,
+            "citation-company": "Valve Corporation" ,
+            "citation-address": "Bellevue, WA 98009" ,
+            "newLineNeeded": false
+		},
+        
+        {
+			"large_image": "images/Spadonium-800.jpg",
+			"small_image": "images/thumb/Spadonium-400.jpg",
+            "image_alt": "Computer generated illustration of a flowering cacti on a deserted planet.",
+			"name": "Spadonium",
+            "price": "178.8",
+			"description": "A chemical that occurs naturally in the spines and skin of cacti that live in barren biomes. ",
+            "source": "Unknown",
+            "about_source": "Unknown",
+            "citation-name": "This in-game screenshot was taken by username: SHANEL262",
+            "citation-link": "http://steamcommunity.com/sharedfiles/filedetails/?id=813655770",
+            "citation-site": "http://steamcommunity.com" ,
+            "citation-date": "Dec 6, 2016" ,
+            "citation-company": "Valve Corporation" ,
+            "citation-address": "Bellevue, WA 98009" ,
+            "newLineNeeded": false
+		},
+        
+        {
+			"large_image": "images/Thamium9-800.jpg",
+			"small_image": "images/thumb/Thamium9-400.jpg",
+            "image_alt": "Computer generated illustration of a small bright red plant with large blossoms.",
+			"name": "Thamium9",
+            "price": "20.6",
+			"description": "Powerful element used to charge mining equipment, weaponry and life support systems. Also used in the creation of products and experimental tech devices, including a Starship's hyperdrive. Thamium9 grows on almost every planet.",
+            "source": "Unknown",
+            "about_source": "Unknown",
+            "citation-name": "This in-game screenshot was sourced from: No Man's Sky resources guide To Plutonium and beyond by Jeffrey Parkin",
+            "citation-link": "http://www.polygon.com/no-mans-sky/2016/8/9/12412122/resources-guide-list",
+            "citation-site": "http://www.polygon.com" ,
+            "citation-date": "Aug 9, 2016" ,
+            "citation-company": "Vox Media, Inc." ,
+            "citation-address": "Washington, DC 20036" ,
+            "newLineNeeded": false
+		},
+        
+        {
+			"large_image": "images/Zinc-800.jpg",
+			"small_image": "images/thumb/Zinc-400.jpg",
+            "image_alt": "Computer generated illustration of a small bright yellow plant with large blossoms.",
+			"name": "Zinc",
+            "price": "41.3",
+			"description": "Powerful element used to recharge defensive technologies, and to create and maintain many components and devices. Zinc grows on almost every planet. ",
+            "source": "Unknown",
+            "about_source": "Unknown",
+            "citation-name": "This in-game screenshot was taken by username: [RIPTIDE]VICE ADMIRAL BUTTERDERP",
+            "citation-link": "http://steamcommunity.com/sharedfiles/filedetails/?id=747124619",
+            "citation-site": "http://steamcommunity.com" ,
+            "citation-date": "Aug 18, 2016" ,
+            "citation-company": "Valve Corporation" ,
+            "citation-address": "Bellevue, WA 98009" ,
+            "newLineNeeded": false
+		}
+		
+	],
+    
+    "all-resources": [
+
+		{
+			"element": "Aluminum",
+			"type": "Neutral",
+            "rarity": "Rare",
+			"average_value": "165"
+            
+		},
+        
+        {
+			"element": "Antrium",
+			"type": "Exotic",
+            "rarity": "Rare",
+			"average_value": "41.3"
+            
+		},
+        
+         {
+			"element": "Calium",
+			"type": "Exotic",
+            "rarity": "Very Rare",
+			"average_value": "288.8"
+            
+		},
+        
+         {
+			"element": "Candensium",
+			"type": "Neutral",
+            "rarity": "Rare",
+			"average_value": "171.9"
+            
+		},
+
+        {
+			"element": "Carbon",
+			"type": "Isotope",
+            "rarity": "Common",
+			"average_value": "6.9"
+            
+		},
+
+         {
+			"element": "Chrysonite",
+			"type": "Silicate",
+            "rarity": "Rare",
+			"average_value": "82.5"
+            
+		},
+        
+         {
+			"element": "Copper",
+			"type": "Neutral",
+            "rarity": "Uncommon",
+			"average_value": "110"
+            
+		},
+        
+         {
+			"element": "Coprite",
+			"type": "Neutral",
+            "rarity": "Rare",
+			"average_value": "6.9"
+            
+		},
+        
+         {
+			"element": "Coryzagen",
+			"type": "Neutral",
+            "rarity": "Rare",
+			"average_value": "158.1"
+            
+		},
+        
+         {
+			"element": "Cymatygen",
+			"type": "Exotic",
+            "rarity": "Very Rare",
+			"average_value": "275"
+            
+		},
+        
+         {
+			"element": "Emeril",
+			"type": "Neutral",
+            "rarity": "Rare",
+			"average_value": "275"
+            
+		},
+
+         {
+			"element": "Fervidium",
+			"type": "Neutral",
+            "rarity": "Rare",
+			"average_value": "165"
+            
+		},
+
+         {
+			"element": "Gold",
+			"type": "Neutral",
+            "rarity": "Rare",
+			"average_value": "220"
+            
+		},
+        
+         {
+			"element": "Heridium",
+			"type": "Silicate",
+            "rarity": "Common",
+			"average_value": "27.5"
+            
+		},
+        
+         {
+			"element": "Iron",
+			"type": "Oxide",
+            "rarity": "Common",
+			"average_value": "13.8"
+            
+		},
+        
+         {
+			"element": "Mordite",
+			"type": "Neutral",
+            "rarity": "Rare",
+			"average_value": "13.8"
+            
+		},
+
+         {
+			"element": "Murrine",
+			"type": "Exotic",
+            "rarity": "Very Rare",
+			"average_value": "302.5"
+            
+		},
+        
+         {
+			"element": "Nickel",
+			"type": "Neutral",
+            "rarity": "Common",
+			"average_value": "137.5"
+            
+		},
+
+         {
+			"element": "Omegon",
+			"type": "Exotic",
+            "rarity": "Very Rare",
+			"average_value": "309.4"
+            
+		},
+        
+         {
+			"element": "Platinum",
+			"type": "Silicate",
+            "rarity": "Uncommon",
+			"average_value": "55"
+            
+		},
+
+         {
+			"element": "Plutonium",
+			"type": "Isotope",
+            "rarity": "Rare",
+			"average_value": "41.3"
+            
+		},
+
+         {
+			"element": "Pugneum",
+			"type": "Neutral",
+            "rarity": "Rare",
+			"average_value": "137.5"
+            
+		},
+
+         {
+			"element": "Radnox",
+			"type": "Exotic",
+            "rarity": "Very Rare",
+			"average_value": "302.5"
+            
+		},
+
+         {
+			"element": "Rigogen",
+			"type": "Exotic",
+            "rarity": "Rare",
+			"average_value": "41.3"
+            
+		},
+        
+         {
+			"element": "Rubeum",
+			"type": "Exotic",
+            "rarity": "Rare",
+			"average_value": "288.8"
+            
+		},
+
+         {
+			"element": "Spadonium",
+			"type": "Neutral",
+            "rarity": "Rare",
+			"average_value": "178.8"
+            
+		},
+        
+         {
+			"element": "Temerium",
+			"type": "Neutral",
+            "rarity": "Rare",
+			"average_value": "178.8"
+            
+		},
+        
+         {
+			"element": "Thamium9",
+			"type": "Isotope",
+            "rarity": "Uncommon",
+			"average_value": "20.6"
+            
+		},
+
+         {
+			"element": "Titanium",
+			"type": "Oxide",
+            "rarity": "Rare",
+			"average_value": "61.9"
+            
+		},
+        
+         {
+			"element": "Tropheum",
+			"type": "Neutral",
+            "rarity": "Rare",
+			"average_value": "137.5"
+            
+		},
+
+         {
+			"element": "Viridium",
+			"type": "Exotic",
+            "rarity": "Rare",
+			"average_value": "302.5"
+            
+		},
+
+		{
+			"element": "Zinc",
+			"type": "Oxide",
+            "rarity": "Uncommon",
+			"average_value": "41.3"
+		}
+	]
+}

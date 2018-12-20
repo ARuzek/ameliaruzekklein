@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example</title>
+    
+        <link rel="stylesheet" href="../css/queens.css">
+        <script>
+            /* Mobile Nav Method From https://www.w3schools.com/howto/howto_js_off-canvas.asp */
+            function openNav() {
+                document.getElementById("mobile-navigation").style.width = "75%";
+            }
+        </script>
+          
+</head>
+<body>
+    <nav class="top-navigation wrapper">
+        <h3>The Little Flower Garden</h3>
+        <ul id="mobile-navigation" class="push-right">
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Flowers</a></li>
+            <li><a href="#">Garden Decorations</a></li>
+        </ul>
+        <!--menu by riyanto r from the Noun Project-->
+        <svg width="30px" class="push-right mobile-only" onclick="openNav()" role="navigation" version="1.1"
+             x="0px" y="0px" viewBox="0 0 81.3 43.3"
+             style="enable-background:new 0 0 81.3 43.3;" xml:space="preserve">
+                <g transform="translate(0,-952.36218)">
+                    <path d="M0,952.4h81.3v6.9H0L0,952.4z"/>
+                    <path d="M0,970.1h81.3v7H0L0,970.1z"/>
+                    <path d="M0,988.6h81.3v7H0L0,988.6z"/>
+                </g>
+        </svg>
+    </nav>
+    <header class="spotlight center" style="background-image: url(../images/eduard-militaru-198560-unsplash.jpg)" >
+        <!--Photo by Eduard Militaru on Unsplash-->
+        <h1 class="center light-color" >
+            Your source for all things flower & garden.
+        </h1>
+    </header>
+    <main class="wrapper">
+        <div class="row">
+            <div class="four-column">
+                <h2>Top 3 Ways to Tame Your Garden Naturally</h2>
+                <h5>Author: Amelia Ruzek</h5>
+                <p>As summer approaches, don't let your garden stress you out. Here are some great ways to bring out the beauty in your garden!</p>
+                <h4>1. Don't Bother Taming It - Let It Be Wild</h4>
+                <p>Who says you have to keep a neat garden? Let nature have its way, and you might end up with a paradise backyard. Seriously!! Many leafy "weeds" are actually edible and flowering "weeds" are sometimes exactly what the bees and butterflies are searching for. Worried this idea will end in disaster? Buy a packet of wild flower seeds to push your wild oasis in the right direction.</p>
+                <h4>2. Plant Strategically</h4>
+                <p>Did you know that some plants will deter pests naturally? It's true! Before grabbing that insect spray, do a little research to see if you can plant something instead. Every insect is different, so make sure you research the right solution for your situation.</p>
+                <h4>3. Start Fresh</h4>
+                <p>No need to break your back trying to work with the soil you've got. Buy new dirt. It might sound a little silly to buy dirt, but you can - in bulk. Research the type of soil needed for the plants you would like to grow and then play scientist. Your yard is your laboratory. Keep notes of your successes, test, and improve on the soil each year.</p>
+            </div>
+            <div class="two-column">
+               <section>
+                   <div class="row">
+                        <div class="six-column circular spotlight center" style="background-image: url(../images/50-off-ad.png)">
+                            <!--Photo by Scott Webb on Unsplash-->
+                            <h2 class="light-color">50% OFF succulents</h2>
+                        </div>
+                    </div>
+               </section>
+                <section>
+                    <div class="row">
+                        <div class="six-column center medium-color">
+                            <img alt="food" src="../images/FRESH.png"/>
+                            <h2 class="light-color">FRESH</h2>
+                            <h4 class="center light-color">A New Documentary About Where Our Food Comes From</h4>
+                            <button class="button-secondary center hover-effect">WATCH NOW</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

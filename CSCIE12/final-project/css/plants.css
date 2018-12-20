@@ -1,0 +1,222 @@
+/*--------------------------------------------------------------------
+NOTE: THIS CSS DOES NOT VALIDATE BECAUSE OF PREFIXES -moz -o -webkit etc 
+
+ALL OTHER ERRORS ARE A RESULT OF PLUGINS OR FRAMEWORKS
+----------------------------------------------------------------------*/
+
+
+/*NAVIGATION*/
+
+nav{
+  background: rgba(0,0,0,0.5);/* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0)); /*Fx 3.6-15*/
+  background: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0)); /*Standard*/
+  width: 100%;
+  text-align: center;
+    
+}
+
+nav ul {
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    padding: 2% 2% 2%;
+    font-size: 120%;
+}
+
+nav ul li a {
+    text-decoration:none;
+}
+
+
+
+/*LINKS*/
+    /* unvisited or visited link */
+    #Error404 a:link, #Error404 a:visited, nav ul li a:link, nav ul li a:visited {
+        color: white;
+    }
+
+    /* mouse over or selected link */
+    nav ul li a:hover,  nav ul li a:active {
+        color: white;
+        border-bottom: thin solid white;
+    }
+
+    /*special navigation*/
+    nav ul li#iamhere a,
+    nav ul li#iamhere a:link,
+    nav ul li#iamhere a:visited,
+    nav ul li#iamhere a:hover { 
+        color: white;
+        border-bottom: thin solid white;
+    }
+    
+    /*special image treatment*/
+    .img a:link, .img a:visited {
+        color: black;
+        text-decoration:none;
+    }
+
+    .img a:hover, .img a:active{
+        opacity: .5;
+        text-decoration:none;
+    }
+
+  
+    
+/*BODY HEADER*/
+#homepage, #about, #reference{ 
+  
+    background-color: #000000;
+    background-image: url("../images/Background-Home.jpg");
+    /*CITATION: 
+    This in-game screenshot was taken by username: SHAIDAK
+    Nov 23, 2016
+    Valve Corporation
+    Bellevue, WA 98009
+    http://steamcommunity.com/sharedfiles/filedetails/?id=805026965
+    */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#construction{
+    
+    background-color: #000000;
+    background-image: url("../images/Background-Construction.jpg");   
+    /*CITATION: 
+    This in-game screenshot was taken by username: CPT. BLURAIN TCNMS EXPLORER
+    Nov 29, 2016
+    Valve Corporation
+    Bellevue, WA 98009
+    http://steamcommunity.com/sharedfiles/filedetails/?id=809155117
+    */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#Error404{
+    background-color: #000000;
+    background-image: url("http://cs12students.dce.harvard.edu/~aruzek/A1_PumpKInSeaS0n/final-project/images/Background-404.jpg");   
+   /*CITATION: 
+    This in-game screenshot was taken by username: Gyraf Likes Waffles
+    Dec 3, 2016
+    Valve Corporation
+    Bellevue, WA 98009
+    http://steamcommunity.com/sharedfiles/filedetails/?id=811622006
+    */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#Error404 button{
+    color: white;
+    text-align: center;
+    display: block;
+    width: auto;
+    margin: 0 auto;
+}
+
+.spotlight{
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.spotlight h1, .spotlight h3, .spotlight h4 {
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;  
+    font-weight: 100;
+    color: white;
+}
+
+/*BODY CONTENT*/
+.full-width-container{
+    width: 100%;
+    background-color: white; 
+}
+
+.content h3{
+    padding-top: 1em;
+}
+
+.img{
+    padding-top: 2em;
+}
+
+.img img, #about img{
+    width: 100%;
+    /*because html width = 100% doesn't validate since it only expects pixels*/
+}
+
+.plant-name{
+    text-align: center;
+}
+
+table{
+    margin-top: 1em;
+}
+
+#about figure{
+    margin: 0 0 0 0;
+    padding-right: 2em;
+    padding-bottom: 2em;
+}
+
+.citation{
+    font-size: 50%;
+    padding-bottom: 2em;
+}
+
+.error{
+    text-align: center;
+    color: red;
+}
+
+/*REFERENCE TABLE*/
+tr:nth-child(even) {
+    background: #E0E0E0
+}
+
+tr:nth-child(odd) {
+    background: #FFFFFF
+}
+tr:hover {
+    background: black;
+    color: white;
+}
+
+/*GALLERY - this overwrites the plugin default for title styling to aid reading accessibility*/
+
+.mfp-title{
+    background-color: black;
+    padding-right: 32px;
+    padding-left: 32px;
+}
+
+
+/*FOOTER*/
+footer{
+    width: 100%;
+    margin-bottom: 0;
+    position: absolute;
+    background-color: black;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+.construction {
+    position: absolute;
+    bottom: 0;
+}
+

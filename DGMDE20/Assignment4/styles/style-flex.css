@@ -1,0 +1,244 @@
+/*Amelia Ruzek | DGMDE20 | Assignment4*/
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+aside {
+    
+    /* Photo by Mo Baghdadi on Unsplash https://unsplash.com/license */
+    background-image: url(../images/mo-baghdadi-109634.jpg);
+    background-size: cover;
+    
+    /*Calc use #1*/
+    flex: 0 0 calc(((100% - 80px) / 3) - 40px);
+    margin: -200px 0px 0px 20px;
+    padding: 0px 20px;
+    
+    display: flex;
+    text-align: center;
+    align-items: center;
+    
+    border-radius: 5px;
+    filter: drop-shadow(0px 2px 6px rgba(0,0,0,0.15));
+}
+
+aside h2{
+    font-size: 1.5em;
+    color: darkslategray;
+}
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    margin: 0;
+}
+
+button {
+    padding: 1em;
+    background-color: darkslategray;
+    color: white;
+    border: none;
+    font-size: .75em;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px rgba(0,0,0,.35);
+
+}
+
+button:hover{
+    animation-name: annoyingButton;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+
+}
+
+footer {
+
+    /*Flex Layout*/
+    display: flex;
+    background-color: darkslategray;
+    margin-top: 20px;
+    
+}
+
+footer div {
+    margin-left: 20px;
+    flex: 0 0 calc(33.33% - 20px);
+}
+
+/*Flex is reordered here*/
+
+footer div:nth-child(1) {
+    order: 1;
+}
+
+footer div:nth-child(2) {
+    order: 3;
+}
+
+footer div:nth-child(3) {
+    order: 2;
+}
+
+footer li {
+    margin-bottom: 1em;
+}
+
+h1, h2, h3, h4, h5, h6, .logo {
+    font-family: 'Spectral SC', serif;
+}
+
+@keyframes annoyingButton {
+    from {
+        transform: scale(1);
+    }
+    
+    to {
+        transform: scale(1.04);
+    }
+}
+
+@keyframes sectionComingIn {
+    
+    from {
+        transform: translateY(10%);
+        opacity: 0;
+    }
+    
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    /* Photo by NASA on Unsplash https://unsplash.com/license */
+    background-image: url(../images/nasa-89125-2000.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+    flex: 0 0 100%;
+    display: flex;
+    text-align: center;
+}
+
+main div {
+    
+    margin: 6em 3em;
+    padding: 3em;
+    /* Calc use #2 */
+    max-width: calc(100% / 1.5);
+    margin-left: 20px;
+    color: white;
+    filter: drop-shadow(0px 0px 20px rgba(0,0,0,0.50));
+    text-align: left;
+    
+    animation-name: sectionComingIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    
+}
+
+main h1 {
+    font-size: 3em;
+    line-height: 1em;
+}
+
+nav a {
+    color: black;
+}
+
+nav ul li {
+   color: black;
+   
+}
+
+nav ul li.logo {
+    font-size: 1.5em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.review {
+    flex: 0 0 calc((((100% - 80px) / 3) * 2) + 20px);
+    margin-left: 20px ;
+    color: black;
+    font-size: 2em;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+section div {
+    margin-left: 20px;
+    flex: 0 0 calc((100% - 80px) /3);
+    
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px rgba(0,0,0,.35);
+}
+
+section div button {
+    /*Calc use #3*/
+    margin-bottom: calc((100% - 80px) /3);
+}
+
+section div h3 {
+    margin-top: calc((100% - 80px) /3);
+    filter: drop-shadow(0px 0px 5px rgba(0,0,0,1));
+}
+
+section h2 {
+    flex: 0 0 100%;
+    color: black;
+    text-align: center;
+}
+
+.AtlantisTour{
+    /* Photo by Mo Baghdadi on Unsplash https://unsplash.com/license */
+    background-image: url(../images/mo-baghdadi-109634-600.jpg);
+    background-size: cover;
+} 
+
+.SaturnTour{
+    /* Photo by Alan Labisch on Unsplash https://unsplash.com/license */
+    background-image: url(../images/alan-labisch-314373-600.jpg);
+    background-size: cover;
+} 
+
+.PrehistoricTour{
+    /* Photo by Tomáš Lištiak on Unsplash https://unsplash.com/license */
+    background-image: url(../images/tomas-listiak-103712-600.jpg);
+    background-size: cover;
+}
+
+ul{
+    padding: 0;
+    list-style-type: none;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+.wrapper > div {
+    display: flex;
+}

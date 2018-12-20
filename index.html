@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Amelia : Digital Design, Web Development, and Graphic Design</title>
+        
+        <!-- DOCUMENTATION: I set up my meta data to let search engines and, more importantly, people, find this site easily -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115317484-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-115317484-1');
+        </script>
+
+        <meta charset="UTF-8" />
+        <meta name="description" content="I'm Amelia. I'm a designer, developer, and student of Digital Media Design." />
+        <meta name="keywords" content="web design, web development, amelia ruzek, graphic designer, digital designer, website redesign services, hire web designer, website design packages" />
+        <meta name="author" content="Amelia Ruzek" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="canonical" href="http://ameliaruzekklein.com/" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Amelia Ruzek – Digital Design" />
+        <meta property="og:description" content="I'm Amelia. I'm a designer, developer, and student of Digital Media Design." />
+        <meta property="og:image" content="	http://ameliaruzekklein.com/thumbnail-600.jpg" />
+        <meta property="og:url" content="http://ameliaruzekklein.com/" />
+        <meta property="og:site_name" content="Amelia Ruzek – Digital Design"/>
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:description" content="I'm Amelia. I'm a designer, developer, and student of Digital Media Design."/>
+        <meta name="twitter:title" content="Amelia – Digital Design"/>
+        <meta name="twitter:site" content="@ameliaruzek"/>
+        <meta name="twitter:creator" content="@ameliaruzek"/>
+        <meta name="p:domain_verify" content="bf7c0941afdc9d5552068858fd78111b"/>
+        <script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"http:\/\/ameliaruzekklein.com\/","name":"Amelia Ruzek","potentialAction":{"@type":"SearchAction","target":"http:\/\/ameliaruzekklein.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+        <script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Person","url":"http:\/\/ameliaruzekklein.com\/","sameAs":["https:\/\/www.linkedin.com\/in\/ameliaruzek\/","https:\/\/twitter.com\/ameliaruzek"],"@id":"#person","name":"Amelia Ruzek"}</script>
+
+        <!-- DOCUMENTATION: This title and favicon and  appears in the browser tab -->
+        <link rel="icon" type="image/gif" href="images/favicon.gif">
+        
+        <!--STYLING-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+    </head>
+    <body>
+
+       <!--
+          NAVIGATION
+          ------------------------------------------------------------------->
+          <header class="uk-hidden@s uk-flex uk-flex-center uk-flex-middle">
+            <a href="index.html">
+              <img src="images/Logo.png" alt="Amelia Ruzek Logo. Click for Homepage."/>
+            </a>
+            <div role="navigation" class="uk-navbar-toggle uk-navbar-right" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav"></div>
+          </header>
+          <nav class="uk-navbar-container uk-visible@s" uk-navbar>
+            <div class="uk-navbar-left" uk-scrollspy="cls:uk-animation-fade">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-parent">
+                      <a href="index.html">
+                        <img src="images/Logo.png" alt="Amelia Ruzek Logo. Click for Homepage."/>
+                      </a>
+                    </li>
+                    <li class="uk-parent"><a href="index.html" uk-scroll>Portfolio</a></li>
+                    
+                    <li class="uk-parent"><a href="#about" uk-scroll>About</a></li>
+                    
+                    <li class="uk-parent"><a href="https://drive.google.com/file/d/0B0dWcXZpKq7raWhfWGZVVjZ0RjQ/view?usp=sharing" target="_blank" >Resume</a></li>
+                    <li class="uk-parent"><a href="contact.html">Contact</a></li>
+                    <li class="uk-parent"><a href="https://medium.com/@amelia.ruzek.klein" target="_blank">Articles</a></li>
+                    <li class="uk-parent"><a href="https://www.etsy.com/shop/AmeliaDigitalDesign" target="_blank">Get Design Help</a></li>
+                </ul>
+            </div>
+          </nav>
+        
+          <!--
+          OFF CANVAS NAVIGATION
+          --------------------------------------------------------------------->
+          <div class="uk-offcanvas-content">
+            <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+              <div class="uk-offcanvas-bar">
+                <ul class="uk-nav uk-nav-default">
+                    <li class="uk-active"><a href="">Amelia Ruzek</a></li>
+                    <li class="uk-parent"><a href="index.html" uk-scroll>Portfolio</a></li>
+                    <li class="uk-parent"><a href="index.html" uk-scroll>About</a></li>
+                    <li class="uk-parent"><a href="https://drive.google.com/file/d/0B0dWcXZpKq7raWhfWGZVVjZ0RjQ/view?usp=sharing" target="_blank">Resume</a></li>
+                    <li class="uk-parent"><a href="contact.html">Contact</a></li>
+                    <li class="uk-parent"><a href="https://medium.com/@amelia.ruzek.klein" target="_blank">Articles</a></li>
+                    <li class="uk-parent"><a href="https://www.etsy.com/shop/AmeliaDigitalDesign" target="_blank">Get Design Help</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+          <!--
+          HELLO SECTION
+          -----------------------------------------------------------------
+
+              <!--<div class="uk-section uk-background-cover uk-background-blend-darken" style="background-image: url(images/dustin-lee-19667-unsplash.jpg)"> 
+              <div class="uk-section uk-background-cover uk-background-secondary">
+                  <div class="uk-text-center" uk-scrollspy="cls:uk-animation-slide-bottom-small">
+                      <h1 class="uk-heading-primary  ">Get help with the web development and graphic design needed to build your goals.</h1>
+                      <a href="contact.html"><button class="uk-button uk-button-primary">Get a Quote</button></a>
+                  </div>
+              </div>
+
+          <!--
+          WORK LIGHTBOX
+          ------------------------------------------------------------------->
+          <main class="uk-container">
+            <br/>
+            <div class="uk-h2 uk-text-center" uk-scrollspy="cls:uk-animation-fade">
+              <h1 id="portfolio">Portfolio</h1>
+            </div>
+            <ul uk-tab>
+                <li><a href="#">Web Development & UI / UX Design</a></li>
+                <li><a href="#">Branding Design</a></li>
+                <li><a href="#">Animation</a></li>
+            </ul>
+            <section class="uk-switcher">
+               <!--Web Development Section-->
+                <div class="uk-child-width-1-3@m" uk-grid >
+                    <div>
+                        <a class="" href="http://ameliaruzekklein.com/DGMDE27/Assignment4/" target="_blank">
+                            <img src="images/DesignSystem-PresentationRegular.jpg" alt="Hand Crafted Front-End Framework">
+                        </a>
+                        <p>In a final project for class, I was challenged to build a front-end framework from the ground up using HTML and CSS/SASS. The goal of this project was to learn more about how frameworks work and to create something basic, responsive, and using SCSS syntax and CSS variables. I designed, developed, and wrote all the content for this project. I used Brackets as my text editor and Scout as my compiler. I had a lot of fun with this project and learned so much. Looking back, I might have made the colors more nuetral and added more components.</p>
+                        
+                    </div>
+                    <div uk-scrollspy="cls:uk-animation-fade">
+                        <a class="uk-inline" href="http://ameliaruzekklein.com/DGMDE20/Assignment3/" target="_blank">
+                            <img src="images/Foodie-PresentationRegular.jpg" alt="a website design for a food service">
+                        </a>
+                        <p>In a project for class, I was challenged to practice layouts and micro-animations by developing a small website. I designed, developed, and wrote all content using HTML, CSS, and the Brackets text editor. (No framework) Images are stock from Unsplash. Through this project, I learned a lot about layouts and how to create a commonly requested look. In retrospective, I wish I had spent more time on the animations. </p>
+                    </div>
+                    <div uk-scrollspy="cls:uk-animation-fade">
+                        <a class="uk-inline" href="http://ameliaruzekklein.com/DGMD%20E12/Assignment-Final/" target="_blank">
+                                  <img alt="Virtual Flower Garden" src="images/Flower-Garden.png">
+                        </a>
+                        <p>
+                           In a final project for class, I was challenged to build an application using the <a href="https://p5js.org/">p5.js</a> library. My goal was to learn more about how to use the HTML5 canvas element and get creative. I designed, developed, and wrote all content using HTML, CSS, and Javascript in the Brackets text editor. The background image and sound is stock. This project showed me how creative javascript could be by introducing a processing script. It was a lot of fun!! I loved working on this! My only regret is that I wish I had spent a little more time with the UI Design.
+                        </p>
+                    </div>
+                    <div uk-scrollspy="cls:uk-animation-fade">
+                        <a class="uk-inline" href="http://ameliaruzekklein.com/CSCIE12/final-project/" target="_blank">
+                            <img src="images/FantasticPlants-PresentationRegular.jpg" alt="a website design for a gaming fan site">
+                        </a>
+                        <p>
+                            In a final project for class, I was challenged to utilize all of the major concepts we had learned during the semester. I designed, developed, and wrote all content using HTML, CSS, Javascript, JSON, PHP, Handlebars, and the Skeleton framework. Images are screenshots from the game. This project was an excellant opportunity to dive into many tools and skills that were new to me. 
+                        </p>
+                    </div>
+                     <div uk-scrollspy="cls:uk-animation-fade">
+                        <a class="uk-inline" href="images/EB-ui-design.jpg" caption="Eastbay UI Design">
+                            <img src="images/EB-ui-design.jpg" alt="Eastbay UI Design">
+                            
+                        </a>
+                        <p>I was approached by the business operations team with a request to create UI mock ups of new marketing strategies. The goal of the project was to have a set of about 50 images showing how the website could look if certain ideas were implemented. I tackled this project alone, but used a design system library that had already been established by the brand. I met with the team regularly to flesh out ideas, even contributing my own, and then translated those ideas into mock ups and prototypes using Sketch, Principle, and Origami Studio. My mock ups were shared in presentations with research teams, executives, and vendor partners like Nike and adidas. Those presentations resulted in conversations, green lights, and funding. Looking back at this project, I wish the operations team had planned ahead of time with the user research team and that there was more communication and open discussion with the design systems team.</p>
+                    </div>
+                </div>
+                
+                <!--Branding Design-->
+                <div class="uk-child-width-1-3@m" uk-grid uk-lightbox="animation: fade">
+                   
+                    <div uk-scrollspy="cls:uk-animation-fade">
+                        <a class="uk-inline" href="images/ITConference-PresentationRegular.jpg" caption="logo design for a conference">
+                            <img src="images/ITConference-PresentationRegular.jpg" alt="logo design for a conference">
+                        </a>
+                        <p><a href="https://www.cwitc.org/">The Central Wisconsin IT Conference</a> needed a logo for their very first get together - something that was clean, professional, and able to be printed on t-shirts, tote bags, and more. I created this logo using Inkscape. The fonts were free for commercial use and the Wisconsin outline was stock. It ended up a successful event with the logo printed on hundreds of items. My only regret is that I didn't charge for my services. </p>
+                    </div>
+                    <div uk-scrollspy="cls:uk-animation-fade">
+                        <a class="uk-inline" href="images/eastbay-colors.jpg" caption="Eastbay Branding">
+                            <img src="images/eastbay-colors.jpg" alt="Eastbay Branding">
+                        </a>
+                        <p>
+                            Eastbay was in the process of re-branding. The goal of this project was to give both the designers and developers more flexible color options to choose from so that the brand would be better equipt to meet the needs of the modern consumer. I was on a team of 4 designers that decided the color scheme using brains, research, and photoshop. I also put together this presentation PDF afterward. This color set is now in use on <a href="https://www.eastbay.com/">eastbay.com</a> and in its printed look book. This was a great team and our meetings were always full of purpose. 
+                        </p>
+                    </div>
+                     <div uk-scrollspy="cls:uk-animation-fade">
+                        <a class="uk-inline" href="images/Hitch-PresentationRegular.jpg" caption="logo design for a coffee company">
+                            <img src="images/Hitch-PresentationRegular.jpg" alt="logo design for a coffee company">
+                        </a>
+                        <p>
+                            <a href="https://www.hitchcoffeeroasters.com/">A coffee roasting company</a> needed a logo and assistance with branding research. I helped the client decide how to visually present the brand and created this logo using Adobe Illustrator and Photoshop. Fonts were free for commercial use. Looking back, I could have spent more time on the edges and creating mock ups to help the client visualize the end product more. 
+                        </p>
+                    </div>
+                </div>
+             
+                
+                <!--Animation-->
+                <div class="uk-child-width-1-3@m" uk-grid>
+                    <div>
+                        <a class="" href="https://www.instagram.com/p/BoCyIDmBoLi/?hl=en&taken-by=officialeastbay" caption="logo design for a coffee company">
+                            <img src="images/Color-Splash.png" alt="logo design for a coffee company">
+                        </a>
+                    </div>
+                    <div>
+                        <a class="" href="https://www.instagram.com/p/BlYd6MxBl1C/?hl=en&taken-by=officialeastbay" caption="logo design for a coffee company">
+                            <img src="images/White-Shoe.png" alt="logo design for a coffee company">
+                        </a>
+                    </div>
+                    <div>
+                        <a class="" href="https://www.instagram.com/p/BjaFOlBgq-k/?hl=en&taken-by=officialeastbay">
+                            <img src="images/Smoke.png" alt="logo design for a coffee company">
+                        </a>
+                    </div>
+                    
+                </div>
+                
+                
+            </section>
+
+            <!--
+            ABOUT SECTION
+            ------------------------------------------------------------------->
+            <section class="uk-section">
+              <div class="uk-text-center " uk-scrollspy="cls:uk-animation-fade">
+                <h2 id="about">About Me</h2>
+                <p>I'm Amelia Ruzek. I'm a designer, developer, and student of Digital Media Design <a href="https://twitter.com/harvardext?lang=en">@HarvardEXT</a>.</p>
+                <p>I became interested in design after learning animation and drawing in high school. In college, I continued to develop my design skills and became increasingly interested in computer programming as well. After college, I worked on a team of about a dozen graphic designers for the Foot Locker, Inc. website, <a href="https://www.eastbay.com/">eastbay.com</a>. At Eastbay, I built a stronger brand by co-directing various marketing campaigns and photo shoots in addition to visually designing web, social, and email marketing graphics and animations on a daily basis. I continually developed my team by actively sharing web and user interface research, coaching my teammates one on one with various design and technology processes, and presenting concepts for marketing innovation. In addition, I strengthened relationships with internal executives and vendor partners such as Nike by providing Eastbay's business operations team with high fidelity user interface designs and prototypes presenting the company's future innovations and plans for the website. </p>
+                <p>In June of 2018, I earned a graduate certificate in Front-End Web Development from the Harvard University Extension School. I am continuing in that discipline as a graduate student in Digital Media Design while freelancing and writing educational articles as time allows.</p>
+                <p>In a few years, I hope to be in a career that bridges the gap between design and technology.</p>
+             
+              </div>
+            </section>
+
+          
+        </main>
+        <footer class="uk-background-cover uk-background-secondary">
+            <p class="uk-text-center">Made by Amelia Ruzek using the <a href="https://github.com/uikit/uikit">UIKit</a> framework</p>
+        </footer>
+    </body>
+</html>

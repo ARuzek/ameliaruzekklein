@@ -1,0 +1,68 @@
+/**************************
+    IMPORT NORMALIZER
+**************************/
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css');
+
+/**************************
+    IMPORT GOOGLE FONTS
+**************************/
+
+@import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+/**************************
+    DEFINE COLORS USING SASS FUNCTIONS
+**************************/
+
+$accent-color: #4193a1; // I chose this color first 
+$complementary-color: adjust-hue($accent-color, 180); // Then made the complementary
+$dark-color: darken($accent-color, 35%); // Then lightened and darkened similar to Natalya Shelburne's examples but much more simplified. I'm pleased with how it turned out.  
+$light-color: lighten($complementary-color, 50%);
+$medium-light-color: lighten($complementary-color, 45%);
+$medium-color: darken($accent-color, 20%);
+
+
+/**************************
+    DEFINE FONTS
+**************************/
+
+$header-font: 'Quattrocento Sans', sans-serif;
+$paragraph-font: 'Quattrocento Sans', sans-serif;
+$code-font: 'Source Code Pro', monospace;
+$font-size-xs: .5rem;
+$font-size-s: 1rem;
+$font-size-m: 1.5rem;
+$font-size-l: 2rem;
+$font-size-xl: 3rem;
+$font-size-xxl: 4rem;
+
+/**************************
+    DEFINE SPACING
+**************************/
+
+$no-space: 0rem;
+$small-space: .5rem;
+$standard-space: 1rem;
+$large-space: 5rem;
+$xlarge-space: 10rem;
+
+/**************************
+    DEFINE MIXINS
+**************************/
+
+@mixin makeButton($type) {
+    padding: $standard-space;
+    border: none;
+    margin-top: $standard-space;
+    @if $type==primary{
+        color: $light-color;
+        background-color: $accent-color;
+    }
+    @else{
+        color: $dark-color;
+        background-color: $medium-light-color;
+    }
+}
+
+

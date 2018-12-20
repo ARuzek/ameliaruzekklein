@@ -1,0 +1,42 @@
+/*Amelia Ruzek*/
+/*DGMDE27 Assignment 3*/
+/*CSS DOES NOT VALIDATE BECAUSE OF UIKIT ERRORS*/
+
+// 1. Your custom variables and variable overwrites.
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+$global-font-family: "Source Sans Pro", Arial, sans-serif;
+$global-inverse-color: #000000;
+$global-primary-background: #5F8E8B;
+$global-secondary-background: #ECE2DE;
+// 2. Import default variables and available mixins.
+@import "../scss/variables-theme.scss";
+@import "../scss/mixins-theme.scss";
+
+// 3. Your custom mixin overwrites.
+@mixin hook-heading-primary(){
+    padding: 1em;
+}
+
+@mixin hook-button-primary(){
+    color: white;
+}
+
+// 4. Import UIkit.
+@import "../scss/uikit-theme.scss";
+
+//5. Custom Styles
+
+//My footer wasn't behaving the way I wanted it to. I didn't see anything in UIKit, so I made my own adjustment here. 
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+footer {
+    position:absolute;
+    right: 0;
+    top: 100%;
+    left: 0;
+    padding: 1em;  
+}
