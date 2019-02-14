@@ -2,41 +2,41 @@
         <a href="http://ameliaruzekklein.com/DGMDE27/Assignment4/"><h3 class="logo primary-color">QUEENS</h3></a>
         <ul id="mobile-navigation">
             <li>
-                <a href="http://ameliaruzekklein.com/DGMDE27/Assignment4/">About</a>
+                <a href="https://ameliaruzekklein.com/DGMDE27/Assignment4/">About</a>
             </li>
             <li>
-                <a href="http://ameliaruzekklein.com/DGMDE27/Assignment4/pages/gettingstarted.php">Reference</a>
+                <a href="https://ameliaruzekklein.com/DGMDE27/Assignment4/pages/gettingstarted.php">Reference</a>
                 <ul class="mobile-only">
                     <li>
-                        <a href="http://ameliaruzekklein.com/DGMDE27/Assignment4/pages/gettingstarted.php">Getting Started</a>
+                        <a href="https://ameliaruzekklein.com/DGMDE27/Assignment4/pages/gettingstarted.php">Getting Started</a>
                     </li>
                     <li>
-                        <a href="http://ameliaruzekklein.com/DGMDE27/Assignment4/pages/gridsystem.php">Grid System</a>
+                        <a href="https://ameliaruzekklein.com/DGMDE27/Assignment4/pages/gridsystem.php">Grid System</a>
                     </li>
                     <li>
-                        <a href="http://ameliaruzekklein.com/DGMDE27/Assignment4/pages/navsystem.php">Navigation</a>
+                        <a href="https://ameliaruzekklein.com/DGMDE27/Assignment4/pages/navsystem.php">Navigation</a>
                     </li>
                     <li>
-                        <a href="http://ameliaruzekklein.com/DGMDE27/Assignment4/pages/typography.php">Typography</a>
+                        <a href="https://ameliaruzekklein.com/DGMDE27/Assignment4/pages/typography.php">Typography</a>
                     </li>
                         <li>
-                        <a href="http://ameliaruzekklein.com/DGMDE27/Assignment4/pages/colors.php">Colors</a>
+                        <a href="https://ameliaruzekklein.com/DGMDE27/Assignment4/pages/colors.php">Colors</a>
                     </li>
                     <li>
-                        <a href="http://ameliaruzekklein.com/DGMDE27/Assignment4/pages/formelements.php">Form Elements</a>
+                        <a href="https://ameliaruzekklein.com/DGMDE27/Assignment4/pages/formelements.php">Form Elements</a>
                     </li>
                     <li>
-                        <a href="http://ameliaruzekklein.com/DGMDE27/Assignment4/pages/buttons.php">Buttons & Links</a>
+                        <a href="https://ameliaruzekklein.com/DGMDE27/Assignment4/pages/buttons.php">Buttons & Links</a>
                     </li>
                     <li>
-                        <a href="http://ameliaruzekklein.com/DGMDE27/Assignment4/pages/containers.php">Containers</a>
+                        <a href="https://ameliaruzekklein.com/DGMDE27/Assignment4/pages/containers.php">Containers</a>
                     </li>
                     
                 </ul>
             </li>
             
             <li>
-                <a href="http://ameliaruzekklein.com/DGMDE27/Assignment4/pages/example.html">Example Site</a>
+                <a href="https://ameliaruzekklein.com/DGMDE27/Assignment4/pages/example.html">Example Site</a>
             </li>
         </ul>
         <a class="button-primary push-right desktop-only hover-effect" href="../queens.zip" download>DOWNLOAD</a>

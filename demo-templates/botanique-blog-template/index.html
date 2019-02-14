@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+<!-- DOCUMENTATION: This title and favicon and  appears in the browser tab -->
+    <link rel="icon" type="image/gif" href="images/favicon.gif">
+    <title>Your Website Template Here</title>
+        
+<!-- DOCUMENTATION: Set up your meta data to let search engines and, more importantly, people, find this site easily -->
+        
+    <meta name="description" content="Write something about your website here." />
+    <meta name="keywords" content="Write your keywords here." />
+    <meta name="author" content="Your Name Here" />
+
+    <link rel="canonical" href="http://ameliaruzekklein.com/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Your website title here" />
+    <meta property="og:description" content="your website description here" />
+    <meta property="og:image" content="your website image here" />
+    <meta property="og:url" content="your website url here" />
+    <meta property="og:site_name" content="Your website name here"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:description" content="Your website description here"/>
+    <meta name="twitter:title" content="Your website title here"/>
+    <meta name="twitter:site" content="Your twitter handle here"/>
+    <meta name="twitter:creator" content="Your twitter handle here"/>
+
+
+<!--STYLING-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="Your Brand Color Here" />
+
+<!-- DOCUMENTATION: UIkit is a framework. Think of it as an alternative to Bootstrap -->
+
+<!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
+<!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
+<!-- Custom -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Satisfy" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/custom-style.css" />      
+        
+</head>
+
+<body>
+   
+<!--
+DESKTOP NAVIGATION
+------------------------------------------------------------------->
+    <header class=" uk-hidden@s uk-flex uk-flex-center uk-flex-middle uk-margin-left	">
+    <a href="index.html">
+      <img src="images/Replace-With-Your-Logo.png" alt="Your Logo Here"/>
+    </a>
+    <div role="navigation" class="uk-navbar-toggle uk-navbar-right" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav"></div>
+    </header>
+
+    <div class="uk-container top-container">
+        <nav class="uk-navbar-container uk-visible@s" uk-navbar>
+        <div class="uk-navbar-left" uk-scrollspy="cls:uk-animation-fade">
+            <ul class="uk-navbar-nav">
+                <li class="uk-parent">
+                  <a href="index.html">
+                    <img src="images/Replace-With-Your-Logo.png" alt="Your Logo Here"/>
+                  </a>
+                </li>
+                <li class="uk-parent"><a href="blog-layout/">design</a></li>
+                <li class="uk-parent"><a href="grid-layout/">travel</a></li>
+                <li class="uk-parent"><a href="#">art</a></li>
+                <li class="uk-parent"><a href="#">style</a></li>
+                <li class="uk-parent"><a href="#">food</a></li>
+
+            </ul>
+        </div>
+        </nav>
+    </div>                                              
+<!--
+MOBILE NAVIGATION
+--------------------------------------------------------------------->
+    <div class="uk-offcanvas-content">
+    <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+      <div class="uk-offcanvas-bar">
+        <ul class="uk-nav uk-nav-default">
+            <li class="uk-parent"><a href="blog-layout/">design</a></li>
+            <li class="uk-parent"><a href="grid-layout/">travel</a></li>
+            <li class="uk-parent"><a href="#">art</a></li>
+            <li class="uk-parent"><a href="#">style</a></li>
+            <li class="uk-parent"><a href="#">food</a></li>
+
+        </ul>
+      </div>
+    </div>
+    </div>
+          
+<!--
+SLIDESHOW CONTENT
+--------------------------------------------------------------------->
+    <div class="uk-container top-container">
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
+
+            <ul class="uk-slideshow-items">
+            <li>
+                <img src="images/slideshow-photo-example-1.png" alt="Slideshow Photo" uk-cover>
+            </li>
+            <li>
+                <img src="images/slideshow-photo-example-2.png" alt="Slideshow Photo" uk-cover>
+            </li>
+            <li>
+                <img src="images/slideshow-photo-example-3.png" alt="Slideshow Photo" uk-cover>
+            </li>
+            </ul>
+
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+        </div>
+    </div>
+    
+    <main class="uk-container">
+        <div class="uk-text-center" uk-grid>
+<!--
+BLOG CONTENT
+--------------------------------------------------------------------->
+            <div class="uk-width-2-3@m ">
+                
+                <article class="uk-article uk-text-left uk-margin-top">
+                    
+                    <a href="your social media link"><i class="fab fa-facebook-square fa-2x"></i></a>
+                    <a href="your social media link"><i class="fab fa-pinterest-square fa-2x"></i></a>
+                    <h1 class="uk-article-title uk-margin-small	"><a class="uk-link-reset" href="">The Beauty of Texture</a></h1>
+
+                    <p class="uk-article-meta">Written by <a href="#">Your Name Here</a> on 12 April 2019. Posted in <a href="#">Blog</a></p>
+
+                    <p class="uk-text-lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    
+                    <img alt="Your Image Here" src="images/blog-example-1.png"/>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    <div class="uk-grid-small uk-child-width-auto" uk-grid>
+           
+                        <div>
+                            <a class="uk-button uk-button-text" href="#">Read more</a>
+                        </div>
+                        <div>
+                            <a class="uk-button uk-button-text" href="#">5 Comments</a>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="uk-article uk-text-left uk-margin-top">
+                    
+                    <a href="your social media link"><i class="fab fa-facebook-square fa-2x"></i></a>
+                    <a href="your social media link"><i class="fab fa-pinterest-square fa-2x"></i></a>
+                    <h1 class="uk-article-title uk-margin-small	"><a class="uk-link-reset" href="">Painting Lightly, Creating Boldly</a></h1>
+
+                    <p class="uk-article-meta">Written by <a href="#">Your Name Here</a> on 12 April 2019. Posted in <a href="#">Blog</a></p>
+
+                    <p class="uk-text-lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                    
+                    <img alt="Your Image Here" src="images/blog-example-2.png"/>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    <div class="uk-grid-small uk-child-width-auto" uk-grid>
+                        <div>
+                            <a class="uk-button uk-button-text" href="#">Read more</a>
+                        </div>
+                        <div>
+                            <a class="uk-button uk-button-text" href="#">5 Comments</a>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="uk-article uk-text-left uk-margin-top">
+                    
+                    <a href="your social media link"><i class="fab fa-facebook-square fa-2x"></i></a>
+                    <a href="your social media link"><i class="fab fa-pinterest-square fa-2x"></i></a>
+                    <h1 class="uk-article-title uk-margin-small	"><a class="uk-link-reset" href="">Light and Shadow</a></h1>
+
+                    <p class="uk-article-meta">Written by <a href="#">Your Name Here</a> on 12 April 2019. Posted in <a href="#">Blog</a></p>
+
+                    <p class="uk-text-lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    
+                    
+
+                    <div class="uk-grid-small uk-child-width-auto" uk-grid>
+                        <div>
+                            <a class="uk-button uk-button-text" href="#">Read more</a>
+                        </div>
+                        <div>
+                            <a class="uk-button uk-button-text" href="#">5 Comments</a>
+                        </div>
+                    </div>
+                </article>
+                
+                
+            </div>
+<!--
+SIDE BAR CONTENT
+--------------------------------------------------------------------->
+            <div class="uk-width-1-3@m">
+                <div class="uk-card  uk-card-body ">
+                    <h2>great decor finds</h2>
+                    <img alt="Your Image Here" src="images/sidebar-example-1.png"/>
+                </div>
+                <div class="uk-card  uk-card-body uk-padding-remove-top">
+                   <div class="top-container uk-padding	">
+                        <a href="your social media link"><i class="fab fa-facebook-f uk-padding-small "></i></a>
+                        <a href="your social media link"><i class="fab fa-twitter uk-padding-small "></i></a>
+                        <a href="your social media link"><i class="fab fa-pinterest-p uk-padding-small "></i></a>
+                        <a href="your social media link"><i class="fab fa-instagram uk-padding-small"></i></a>
+                        <div class="uk-padding-small">
+                         <a class="uk-button uk-button-text" href="#">Contact</a>
+                        </div>
+                        <div class="uk-padding-small uk-padding-remove-top">
+                         <a class="uk-button uk-button-text" href="#">About</a>
+                        </div>
+                        <p class="uk-margin-small">join our newsletter</p>
+                        <hr class="uk-margin-small uk-divider-small "/>
+                        <form class="uk-grid-small" uk-grid>
+                            <div class="uk-width-1-1">
+                                <input class="uk-input uk-text-center	" type="email" placeholder="email address">
+                                <h2>subsribe</h2>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="uk-card  uk-card-body  uk-padding-remove-top">
+                    <h2>instagram &#x2192;</h2>
+                    <img alt="Your Image Here" src="images/sidebar-example-2.png"/>
+                </div>
+                <div class="uk-card  uk-card-body  uk-padding-remove-top">
+                    <h2>pinterest &#x2192;</h2>
+                    <img alt="Your Image Here" src="images/sidebar-example-3.png"/>
+                </div>
+                
+            </div>
+            
+        </div>
+    </main>
+    
+
+    
+</body>
+<!--THIS UIKIT TEMPLATE WAS CREATED BY @ameliaruzek @ameliadigitaldesign -->
+
+</html>

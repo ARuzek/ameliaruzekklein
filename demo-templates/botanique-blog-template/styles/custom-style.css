@@ -1,0 +1,21 @@
+.uk-navbar-container:not(.uk-navbar-transparent), .top-container {
+    background: #faf5f0;
+}
+
+body, .uk-navbar-nav>li>a, h1, h2, h3, h4, h5, h6, p{
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: none;
+}
+
+h2 {
+    font-family: 'Satisfy', cursive;
+    font-size: 1.5em;
+}
+
+a:link i, a:visited i, a:active i {
+    color: #777777;
+}
+
+a:hover i {
+    color: #999999;
+}
