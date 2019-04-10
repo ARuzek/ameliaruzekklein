@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+<!-- DOCUMENTATION: This title and favicon and  appears in the browser tab -->
+    <link rel="icon" type="image/gif" href="images/favicon.gif">
+    <title>Travel</title>
+        
+<!-- DOCUMENTATION: Set up your meta data to let search engines and, more importantly, people, find this site easily -->
+        
+    <meta name="description" content="Write something about your website here." />
+    <meta name="keywords" content="Write your keywords here." />
+    <meta name="author" content="Your Name Here" />
+
+    <link rel="canonical" href="http://ameliaruzekklein.com/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Your website title here" />
+    <meta property="og:description" content="your website description here" />
+    <meta property="og:image" content="your website image here" />
+    <meta property="og:url" content="your website url here" />
+    <meta property="og:site_name" content="Your website name here"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:description" content="Your website description here"/>
+    <meta name="twitter:title" content="Your website title here"/>
+    <meta name="twitter:site" content="Your twitter handle here"/>
+    <meta name="twitter:creator" content="Your twitter handle here"/>
+
+
+<!--STYLING-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="Your Brand Color Here" />
+
+<!-- DOCUMENTATION: UIkit is a framework. Think of it as an alternative to Bootstrap -->
+
+<!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
+<!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
+<!-- Custom -->
+   <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat:700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/custom-style.css" />      
+        
+</head>
+
+<body>
+   
+<!--
+HEADER
+------------------------------------------------------------------->
+<header class="uk-navbar-container" uk-navbar>
+    <div class="uk-navbar-left uk-margin-left">
+        <div role="navigation" class="uk-navbar-toggle uk-navbar-right" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav"></div> 
+    </div>
+    <div class="uk-navbar-center">
+        
+        <a href="index.html" class="uk-navbar-item uk-logo">
+            <img src="images/TravelLOGO.svg" class="" alt="Your Logo Here" width="300px"/>
+        </a>
+        
+    </div>
+    <div class="uk-navbar-right uk-margin-right">
+        <a class="uk-button uk-button-primary uk-box-shadow-hover-small" uk-toggle="target: #modal-contact">CONTACT US</a> 
+    </div>
+</header>                                        
+<!--
+NAVIGATION
+--------------------------------------------------------------------->
+    <nav class="uk-offcanvas-content">
+    <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+      <div class="uk-offcanvas-bar">
+        <ul class="uk-nav uk-nav-default">
+            <li class="uk-parent"><a href="">Museums</a></li>
+            <li class="uk-parent"><a href="">Arts and Theatres</a></li>
+            <li class="uk-parent"><a href="#">Cuisine</a></li>
+            <li class="uk-parent"><a href="#">Accomodation</a></li>
+            <li class="uk-parent"><a href="#">Transport</a></li>
+
+        </ul>
+      </div>
+    </div>
+    </nav>
+          
+<!--
+SLIDESHOW CONTENT
+--------------------------------------------------------------------->
+    <div> <!-- class="uk-container top-container">-->
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
+
+            <ul class="uk-slideshow-items">
+            <li>
+                <img src="images/stockholm-289-unsplash.jpg" alt="Slideshow Photo" uk-cover>
+            </li>
+            <!--Copy <li> tag and repeat for more slideshow images.-->
+            </ul>
+
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+        </div>
+    </div>
+    
+    <main class="uk-container">
+        <div class="uk-text-center" uk-grid>
+<!--
+CONTENT 
+Citation: https://en.wikipedia.org/wiki/Stockholm
+Icons: Created by Made from Noun Project 
+Images: Unsplash
+--------------------------------------------------------------------->
+           <!--:modal=visitorInfo.modal-->
+
+            <div class="uk-width-3-3@m " id="app">
+                <article class="uk-article uk-text-center uk-margin-top" v-for="visitorInfo in information" >
+                    <info  :img=visitorInfo.img :modal=visitorInfo.modal class="uk-article uk-text-center uk-margin-top" uk-scrollspy="cls:uk-animation-slide-bottom-small">
+                        <h2 class="uk-margin-small" >{{visitorInfo.desc}}</h2>
+                        <h1 class="uk-article-title uk-margin-small"><a class="uk-link-reset" href="">{{visitorInfo.name}}</a></h1>
+                        <p>{{visitorInfo.paragraph}}</p>
+                        <span slot="buttonText">{{visitorInfo.button}}</span>
+                    </info>
+                </article>
+            </div>
+            
+<!--
+MODAL CONTACT CONTENT
+--------------------------------------------------------------------->
+<div id="modal-contact" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-text-center">
+        <h2 class="uk-modal-title">CONTACT</h2>
+        <br v-if="thankyou"/>
+        <form v-else @submit.prevent="thanks">
+            <fieldset class="uk-fieldset">
+
+                <div class="uk-margin">
+                    <input v-model="name" class="uk-input" type="text" placeholder="Your Name">
+                </div>
+                <div class="uk-margin">
+                    <input v-model="email" class="uk-input" type="email" placeholder="Your Email">
+                </div>
+                <div class="uk-margin">
+                    <textarea  v-model="message" class="uk-textarea" rows="5" placeholder="Your Message"></textarea>
+                </div>
+                <p class="uk-text-center" >
+                    <button  :class="[name ? activeClass : '']" type="submit" class="uk-button uk-button-inactive" type="submit">Send</button>
+                </p>
+               
+            
+            </fieldset>
+        </form>
+         <h3 v-if="thankyou" class="uk-animation-slide-bottom-small">
+            {{thankyou}}
+         </h3>
+    </div>
+</div>
+           
+<!--
+MODAL TRAVEL CONTENT
+--------------------------------------------------------------------->
+<div id="modal-travel" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-text-center">
+        <h2 class="uk-modal-title">BOOK TRAVEL</h2>
+        <br v-if="thankyou"/>
+        <form class="uk-form" v-else @submit.prevent="thanks">
+            <fieldset class="uk-fieldset">
+                <div class="uk-margin">
+                    <input v-model="name" class="uk-input" type="text" placeholder="Your Name">
+                </div>
+                <div class="uk-margin">
+                    <input v-model="email" class="uk-input" type="email" placeholder="Your Email">
+                </div>
+                <div class="uk-margin">
+                    <label>Select your dates of travel<select class="uk-select" v-model="dates">
+                        <option>April 10th 2020 - May 6th 2020</option>
+                        <option>June 20th 2020 - July 2nd 2020</option>
+                    </select>
+                    </label>
+                </div>
+                <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                    <label><input class="uk-radio" type="radio" name="radio2" checked> Deluxe Travel Package</label>
+                    <label><input class="uk-radio" type="radio" name="radio2">Basic Travel Package</label>
+                </div>
+                <p class="uk-text-center">
+                    <button class="uk-button uk-button-primary" type="submit">Send</button>
+                </p>
+            </fieldset>
+        </form>
+        <h3 v-if="thankyou" class="uk-animation-slide-bottom-small">
+            {{thankyou}}
+        </h3>
+    </div>
+</div>
+           
+<!--
+MODAL HOTELS CONTENT
+--------------------------------------------------------------------->
+<div id="modal-hotels" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-text-center">
+        <h2 class="uk-modal-title">BOOK HOTEL</h2>
+    </div>
+</div>
+           
+<!--
+MODAL RESTAURANT CONTENT
+--------------------------------------------------------------------->
+<div id="modal-restaurants" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-text-center">
+        <h2 class="uk-modal-title">RESERVE A TABLE</h2>
+    </div>
+</div>
+            
+<!--
+SOCIAL CONTENT
+--------------------------------------------------------------------->
+            <div class="uk-width-3-3@m">
+                <div class="uk-card  uk-card-body uk-padding-remove-top">
+                   <div class="top-container uk-padding	">
+                        <a href="your social media link"><i class="fab fa-facebook-f uk-padding-small "></i></a>
+                        <a href="your social media link"><i class="fab fa-twitter uk-padding-small "></i></a>
+                        <a href="your social media link"><i class="fab fa-pinterest-p uk-padding-small "></i></a>
+                        <a href="your social media link"><i class="fab fa-instagram uk-padding-small"></i></a> 
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </main>
+    
+
+    
+</body>
+
+<script type="text/x-template" id="info">
+    <div>
+    <img alt="Your Image Here" class="uk-margin-bottom	" :src="img" width="150px"/>
+    <slot></slot>
+    <a class="uk-button uk-button-primary uk-box-shadow-hover-small" :uk-toggle="modal">
+    <slot name="buttonText"></slot>
+    </a>
+    </div>
+</script>
+
+<!--
+SCRIPTED CONTENT
+--------------------------------------------------------------------->
+<script type="application/javascript">
+    Vue.component('info', {
+        props: ['img', 'modal'],
+        template: '#info'
+    });
+
+new Vue({
+    
+    el: '#app',
+    data() {
+        return {
+            information: [ 
+                
+            {
+             name: 'stockholm, sweden',
+             img: 'images/noun_Suitcase_959361.svg' ,
+             desc: 'The city stretches across fourteen islands where Lake Mälaren flows into the Baltic Sea.',
+             paragraph: 'Apart from being Sweden\'s capital, Stockholm houses many national cultural institutions. The Stockholm region is home to three of Sweden\'s World Heritage Sites – spots judged as invaluable places that belong to all of humanity: The Drottningholm Palace, Skogskyrkogården (The Woodland Cemetery) and Birka. In 1998, Stockholm was named European Capital of Culture.',
+             button: 'Book Travel',
+             modal: 'target: #modal-travel'    
+            },
+                
+            {
+             name: 'hotels',
+             img: 'images/noun_Hotel_959371.svg' ,
+             desc: 'Stockholm is one of the cleanest capitals in the world.',
+             paragraph: 'Grand Hôtel is a five-star hotel in Stockholm. It was founded by Frenchman, Jean-François Régis Cadier, in 1872. It opened on 14 June 1874 at the same time as the Grand Hotel in Oslo; all the Scandinavian capitals have a major hotel called \'Grand Hotel\'. The Grand Hôtel is located next to the Nationalmuseum and opposite the Royal Palace and Gamla stan (the old town). Since 1901, the Nobel Prize laureates and their families have traditionally been guests at the hotel, as well as several celebrities and world leaders.',
+             button: 'Book a Room',
+             modal: 'target: #modal-hotels'  
+            },
+                
+            {
+             name: 'restaurants',
+             img: 'images/noun_Breakfast_959368.svg' ,
+             desc: 'Stockholm boasts a total of eight Michelin star restaurants',
+            paragraph: 'Frantzén, until 2013 Frantzén/Lindeberg, is a restaurant in Stockholm, situated on Klara Norra kyrkogata number 26. In 2010, it received two stars in Guide Michelin, and in 2018 it received its third star as the first Swedish restaurant to do so.',
+            button: 'Reserve a Table',
+            modal: 'target: #modal-restaurants'  
+            }    
+                
+            ]
+        }
+    }
+        
+});
+
+new Vue({
+    
+    el: '#modal-contact',
+    data() {
+        return {
+          name: '',
+         email: '',
+        message: '',
+    activeClass: 'active',
+      thankyou: ''
+        }
+    },
+    methods: {
+        thanks(){
+            this.thankyou = 'Thanks ' + this.name + ', We\'ll be in touch soon!';  
+        }
+    }
+        
+});
+
+new Vue({
+    
+    el: '#modal-travel',
+    data() {
+        return {
+         name: '',
+         email: '',
+         dates: '',
+        thankyou: ''    
+        }
+    },
+    methods: {
+        thanks(){
+            this.thankyou = 'Thanks ' + this.name + ', a confirmation email is on it\'s way';  
+        }
+    }
+        
+});
+</script>
+
+
+<!--THIS UIKIT TEMPLATE WAS CREATED BY @ameliaruzek @ameliadigitaldesign -->
+</html>

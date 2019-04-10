@@ -1,0 +1,45 @@
+.uk-navbar-container:not(.uk-navbar-transparent), .uk-modal-dialog, .uk-modal-body {
+     background-color: #faf5f0;
+}
+
+body, .uk-navbar-nav>li>a, h1, h2, h3, h4, h5, h6, p{
+    font-family: 'Lora', serif;
+    text-transform: none;
+    background-color: #faf5f0;
+}
+h1, a.uk-button, .uk-modal-title, .uk-button {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    
+}
+
+.uk-modal-title {
+    color: black;
+}
+h2 {
+    
+    font-size: 1em;
+    color: darkred;
+}
+
+a:link i, a:visited i, a:active i {
+    color: darkred;
+}
+
+a:hover i {
+    color: firebrick;
+    
+}
+
+.uk-button-primary {
+    background-color: #abb1a7;
+}
+.uk-button-primary:hover {
+ background-color: #7d7f7e
+}
+
+.active {
+    background-color: #abb1a7;
+    color: white;
+}
+

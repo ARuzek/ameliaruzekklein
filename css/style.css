@@ -10793,3 +10793,39 @@ footer {
   left: 0;
   padding: 1em;
 }
+
+/* ========================================================================
+   Custom STYLES
+ ========================================================================== */
+
+.greetingApp {
+    font-size: 5em;
+    color: #f8f8f8;
+}
+
+.uk-card-badge {
+    background-color: #F6E9E7;
+    position: relative;
+    top: 0px;
+    right: 0px;
+}
+
+.uk-card-badge.uk-align-right {
+    margin-left: 6px;
+}
+
+@media (max-width: 639px) {
+
+.uk-sticky-placeholder {
+    display: none;
+}
+
+}
+
+@media (min-width: 640px) {
+
+.uk-sticky-placeholder {
+    display: block;
+}
+
+}

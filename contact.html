@@ -16,30 +16,48 @@
           NAVIGATION
           ------------------------------------------------------------------->
           <header class="uk-hidden@s uk-flex uk-flex-center uk-flex-middle">
-            <a href="/">
+            <a class="uk-margin-small-left" href="index.html">
               <img src="images/Logo.png" alt="Amelia Ruzek Logo. Click for Homepage."/>
             </a>
             <div role="navigation" class="uk-navbar-toggle uk-navbar-right" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav"></div>
           </header>
-          <nav class="uk-navbar-container uk-visible@s" uk-navbar>
-            <div class="uk-navbar-left" uk-scrollspy="cls:uk-animation-fade">
-                <ul class="uk-navbar-nav">
-                    <li class="uk-parent">
-                      <a href="index.html">
-                        <img src="images/Logo.png" alt="Amelia Ruzek Logo. Click for Homepage."/>
-                      </a>
-                    </li>
-                    <li class="uk-parent"><a href="index.html" uk-scroll>Portfolio</a></li>
-                    
-                    <li class="uk-parent"><a href="index.html" uk-scroll>About</a></li>
-                    
-                    <li class="uk-parent"><a href="https://drive.google.com/file/d/0B0dWcXZpKq7raWhfWGZVVjZ0RjQ/view?usp=sharing" target="_blank" >Resume</a></li>
-                    <li class="uk-parent"><a href="contact.html">Contact</a></li>
-                    <li class="uk-parent"><a href="https://medium.com/@amelia.ruzek.klein" target="_blank">Articles</a></li>
-                    
-                </ul>
-            </div>
-          </nav>
+          <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+              <nav class="uk-navbar-container uk-visible@s" uk-navbar>
+                <div class="uk-navbar-left" uk-scrollspy="cls:uk-animation-fade">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-parent">
+                          <a href="index.html">
+                            <img src="images/Logo.png" alt="Amelia Ruzek Logo. Click for Homepage."/>
+                          </a>
+                        </li>
+                       
+
+                        <li class="uk-parent"><a href="index.html" uk-scroll>About</a></li>
+
+                        <li class="uk-parent"><a href="https://drive.google.com/file/d/0B0dWcXZpKq7raWhfWGZVVjZ0RjQ/view?usp=sharing" target="_blank" >Resume</a></li>
+                        <li class="uk-parent"><a href="contact.html">Contact</a></li>
+                         <li class="uk-parent"><a href="index.html" uk-scroll>Portfolio</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="/portfolio/webdevelopment/">Web Development</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li><a href="/portfolio/userinterface/">User Interface Design</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li><a href="/portfolio/animation/">2D and 3D Animation</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li><a href="/portfolio/branding/">Branding Design</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li><a href="/portfolio/creativedirection/">Marketing Campaign Creative Direction</a></li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li class="uk-parent"><a href="https://medium.com/@amelia.ruzek.klein" target="_blank">Articles</a></li>
+
+                    </ul>
+                </div>
+              </nav>
+         </div>
         
           <!--
           OFF CANVAS NAVIGATION
@@ -48,11 +66,23 @@
             <div id="offcanvas-nav" uk-offcanvas="overlay: true">
               <div class="uk-offcanvas-bar">
                 <ul class="uk-nav uk-nav-default">
-                    <li class="uk-active"><a href="index.html">Amelia Ruzek</a></li>
-                    <li class="uk-parent"><a href="index.html" uk-scroll>Portfolio</a></li>
-                    <li class="uk-parent"><a href="index.html" uk-scroll>About</a></li>
+
+                    <li><a href="/portfolio/webdevelopment/">Web Development</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="/portfolio/userinterface/">User Interface Design</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="/portfolio/animation/">2D and 3D Animation</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="/portfolio/branding/">Branding Design</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="/portfolio/creativedirection/">Marketing Campaign Creative Direction</a></li>
+                    <li class="uk-nav-divider"></li>      
+                    <li class="uk-parent"><a href="index.html">About</a></li>
+                     <li class="uk-nav-divider"></li>
                     <li class="uk-parent"><a href="https://drive.google.com/file/d/0B0dWcXZpKq7raWhfWGZVVjZ0RjQ/view?usp=sharing" target="_blank">Resume</a></li>
+                     <li class="uk-nav-divider"></li>
                     <li class="uk-parent"><a href="contact.html">Contact</a></li>
+                     <li class="uk-nav-divider"></li>
                     <li class="uk-parent"><a href="https://medium.com/@amelia.ruzek.klein" target="_blank">Articles</a></li>
                     
                 </ul>
@@ -69,23 +99,23 @@
             <div class="uk-h2 uk-text-center" uk-scrollspy="cls:uk-animation-fade">
               <h1>Contact Me</h1>
             </div>
-            <form class="uk-form-stacked" method="post" action="//formspree.io/amelia.ruzek.klein@gmail.com">
+            <form class="uk-form-stacked" action="https://formcarry.com/s/yFP2W3JEvFV" method="POST" accept-charset="UTF-8" >
               <div class="uk-margin">
                   <label class="uk-form-label" for="form-stacked-text">Your Name</label>
                   <div class="uk-form-controls">
-                      <input class="uk-input" id="form-stacked-text" type="text" placeholder="Ex: John Smith">
+                      <input class="uk-input" id="form-stacked-text" name="name" type="text" placeholder="Ex: John Smith">
                   </div>
               </div>
               <div class="uk-margin">
                   <label class="uk-form-label" for="form-stacked-email">Your Email</label>
                   <div class="uk-form-controls">
-                      <input class="uk-input" id="form-stacked-email" type="email" placeholder="I will never give out your personal information, I just need to know how to communicate with you.">
+                      <input class="uk-input" id="form-stacked-email" name="email" type="email" placeholder="I will never give out your personal information, I just need to know how to communicate with you.">
                   </div>
               </div>
               <div class="uk-margin">
                   <label class="uk-form-label" for="form-stacked-select">Select the description that best matches your needs</label>
                   <div class="uk-form-controls">
-                      <select class="uk-select" id="form-stacked-select">
+                      <select class="uk-select" id="form-stacked-select" name="selection">
                           <option>I am requesting design or development help (Freelance / Contract)</option>
                           <option>I am a recruiter or HR specialist.</option>
                           <option>I have a question or comment.</option>
@@ -96,7 +126,7 @@
               <div class="uk-margin">
                   <label class="uk-form-label" for="form-stacked-textarea">Your Message</label>
                   <div class="uk-form-controls">
-                      <input class="uk-textarea" id="form-stacked-textarea" type="textarea" placeholder="Tell me more...">
+                      <input class="uk-textarea" id="form-stacked-textarea" type="textarea" name="message" placeholder="Tell me more...">
                   </div>
               </div>
               <input type="submit" value="SEND" class="uk-button uk-button-primary">
@@ -107,14 +137,14 @@
             <section class="uk-section">
               <div class="uk-text-center " uk-scrollspy="cls:uk-animation-fade">
                 <h2>Connect With Me</h2>
-                <p>Connect with me on <a href="https://www.linkedin.com/in/ameliaruzek/">LinkedIn</a>, <a href="https://medium.com/@amelia.ruzek.klein">Medium</a>, or <a href="https://twitter.com/AmeliaRuzek">Twitter</a> and check out my <a href="resume.html">Resume</a> if you haven't yet. If you're contacting me about a freelance opportunity, I encourage you to take a look at my <a href="https://www.etsy.com/shop/AmeliaDigitalDesign">Etsy shop</a>, or <a href="https://www.fiverr.com/ameliaruzek">Fiverr</a>
+                <p>Connect with me on <a href="https://www.linkedin.com/in/ameliaruzek/">LinkedIn</a>, <a href="https://medium.com/@amelia.ruzek.klein">Medium</a>, or <a href="https://twitter.com/AmeliaRuzek">Twitter</a> and check out my <a href="resume.html">Resume</a> if you haven't yet.
               </div>
             </section>
             
           </main>
          
           <footer class="uk-background-cover uk-background-secondary">
-            <p class="uk-text-center">Made by Amelia Ruzek using UIKit</p>
+            <p class="uk-text-center">Made by Amelia Ruzek Klein using UIKit</p>
           </footer>
     </body>
 </html>
