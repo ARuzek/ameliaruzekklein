@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Assignment-Final</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.8/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.8/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.8/addons/p5.sound.min.js"></script>
+    <script src="/flowerHandler.771ebf09.js" type="text/javascript"></script>
+    <script src="/musicHandler.a7560fbd.js" type="text/javascript"></script>  
+    <script src="/sketch.702e4367.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="/ui.0f8229a0.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">  
+  <script src="/ui.0f8229a0.js"></script></head>
+    
+  <body id="dropzone">
+          <h1 id="errorMessage">Oh no! This site uses javascript. If possible, please enable and refresh your browser.</h1>   
+          <div id="interface" class="container">
+            <h1>Create a flower garden!</h1>
+            <h2>number of petals</h2>
+              <div id="slider"></div>   
+            <hr>
+            <h2>shape of petals</h2>
+            
+              <input type="radio" name="shape" value="circle" id="shape-circle" class="input-hidden">
+              <label for="shape-circle"><img src="/circle.033f46e6.png" alt="image of circle"> </label>
+              <input type="radio" name="shape" value="oval" id="shape-oval" class="input-hidden">
+              <label for="shape-oval"><img src="/oval.58c4462c.png" alt="image of oval"> </label>
+              <input type="radio" name="shape" value="square" id="shape-square" class="input-hidden">
+              <label for="shape-square"><img src="/square.408ff683.png" alt="image of square"> </label>
+              <input type="radio" name="shape" value="triangle" id="shape-triangle" class="input-hidden">
+              <label for="shape-triangle"><img src="/triangle.0928cf0f.png" alt="image of triangle"> </label>
+              <input type="radio" name="shape" value="lotus" id="shape-lotus" class="input-hidden">
+              <label for="shape-lotus"><img src="/lotus.bfd324af.png" alt="image of lotus shape"> </label>
+              <input type="radio" name="shape" value="leaf" id="shape-leaf" class="input-hidden">
+              <label for="shape-leaf"><img src="/leaf.6d9eaf0b.png" alt="image of leaf shape"> </label>
+            
+            <hr>
+            <h2>color</h2>
+              <input type="radio" name="color" value="red" id="color-red" class="input-hidden">
+              <label for="color-red"><img src="/red.db878d1d.png" alt="image of red circle"> </label>
+              <input type="radio" name="color" value="pink" id="color-pink" class="input-hidden">
+              <label for="color-pink"><img src="/pink.c56822d3.png" alt="image of pink circle"></label>
+              <input type="radio" name="color" value="yellow" id="color-yellow" class="input-hidden">
+              <label for="color-yellow"><img src="/yellow.31201af9.png" alt="image of yellow circle"> </label>
+              <input type="radio" name="color" value="blue" id="color-blue" class="input-hidden">
+              <label for="color-blue"><img src="/blue.5514c4c2.png" alt="image of blue circle"> </label>
+              <input type="radio" name="color" value="purple" id="color-purple" class="input-hidden">
+              <label for="color-purple"><img src="/purple.d0ea0229.png" alt="image of purple circle"></label>
+            <hr>
+            <button onclick="checkIfMusicReady(defaultMusic)">Listen to Nature Sounds</button>     
+          </div>
+          
+     
+  </body>
+</html>

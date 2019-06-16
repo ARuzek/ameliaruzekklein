@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="1000px" height="1000px" viewBox="0 0 600 600" transform-origin="50% 50%">
+    <symbol id="justbecauseflower">
+        <g fill="blue">
+            <polygon fill="#F6E9E7" points="20,20 4,30 60,20" />
+        </g>
+    </symbol>
+    <use href="#justbecauseflower" />
+    <use transform="scale(0.5) rotate(10 10 10)" href="#justbecauseflower" />
+</svg>
